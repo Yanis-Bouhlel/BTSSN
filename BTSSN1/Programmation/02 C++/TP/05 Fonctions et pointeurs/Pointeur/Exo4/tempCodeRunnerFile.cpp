@@ -1,1 +1,0 @@
-cout << "Il y a " << y << " fois la lettre 'A'. " << endl ;y = y + 1;

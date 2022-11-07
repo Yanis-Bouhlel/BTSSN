@@ -1,1 +1,0 @@
-"Mode codage ou decodage ?
