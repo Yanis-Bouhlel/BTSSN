@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google map</title>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <style>
+        #carte {
+            height: 800px;
+            width: 1340px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>GOOGLE MAP</h1>
+    <div id="carte"></div>
+    <!-- Le script qui va créer notre carte -->
+
+    <!-- cf. onglets "script" -->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="Index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        window.onload = loadDoc();
+
+
+        function loadDoc() {
+            $.ajax({
+                url: "marker.Jrostand.json",
+                method: "GET",
+                dataType: "json",
+                success: function (Markers) {
+                    var Mark = Markers
+                    for (var i = 0; i < Mark.length; i++) {
+                        mark = Mark[i];
+                        for (var j in mark) {
+                            console.log(j + " : " + mark[j]);
+                        }
+                    }
+                    /* CDs representera un objet JSON retourné par le serveur */
+                    /* compléter le code de la fonction afin d'afficher les CD de CDs à la console */
+                    /* vous utiliserez deux boucles for
+                        - boucle for classique sur CDs
+                        - boucle for in sur CD
+                     */
+                }
+            }
+            );
+            console.log("OUI");
+        };
+    </script>
+    <!-- Le conteneur de notre carte -->
+</body>
+
+</html>

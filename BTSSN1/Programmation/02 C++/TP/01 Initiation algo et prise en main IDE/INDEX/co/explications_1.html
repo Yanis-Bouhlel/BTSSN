@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Explications</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.103 / Opale 3.6.100">
+  <meta name="revision" content="2020-09-12 17:07">
+  <link rel="start" href="module_programmation.html" title="Module Programmation ( D&eacute;couverte algorithmie ) 1/5">
+  <meta name="author" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"kezx9nx0"};
+/*1*/ window.scLoadParams = {destUri:"/co/explications_1.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+ </head>
+ <body class="subWin ref">
+  <div id="root"><header id="header" role="banner"><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article expUc"><h2 class="hBk_ti"><span>Explications</span></h2><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Tout programme C/C++ doit poss&eacute;der une fonction nomm&eacute;e main (principale) pour indiquer o&ugrave; commencer l'ex&eacute;cution. Une fonction est essentiellement une suite d'instructions que l'ordinateur ex&eacute;cutera dans l'ordre o&ugrave; elles sont &eacute;crites.</p><p>Une fonction comprend quatre parties :</p><ul class="txt_il "><li class="txt_ili "><p><strong class="txt_emp_is ">un type de retour</strong> : ici int (pour integer ou entier) qui sp&eacute;ciﬁe le genre de r&eacute;sultat que la fonction retournera lors de son ex&eacute;cution. En C/C++, le mot int est un mot r&eacute;serv&eacute; (un mot-cl&eacute;) : il ne peut donc pas &ecirc;tre utilis&eacute; pour nommer autre chose.</p></li></ul><ul class="txt_il "><li class="txt_ili "><p>&nbsp;<strong class="txt_emp_is ">un nom</strong> : ici main</p></li></ul><ul class="txt_il "><li class="txt_ili "><p><strong class="txt_emp_is ">une liste de param&egrave;tres</strong> entre parenth&egrave;ses (que l'on verra plus tard) : ici la liste de param&egrave;tres est vide</p></li></ul><ul class="txt_il "><li class="txt_ili "><p><strong class="txt_emp_is ">un corps de fonction</strong> entre accolades qui &eacute;num&egrave;re les instructions que la fonction doit ex&eacute;cuter Remarque : la plupart des instructions C/C++ se terminent par un point-virgule (;).</p></li></ul></div><div class="rBk "><p>En C/C++, les cha&icirc;nes de caract&egrave;res sont d&eacute;limit&eacute;es par des guillemets anglais (&quot;). &quot;Hello world!\n&quot; est donc une cha&icirc;ne de caract&egrave;res. Le code<strong class="txt_emp_is "> \n</strong> est un &ldquo;caract&egrave;re sp&eacute;cial&rdquo; indiquant le passage &agrave; une nouvelle ligne (newline) il pourra &ecirc;tre remplacer par endl.</p><p>Le nom<strong class="txt_emp_is "> cout</strong> (character output stream) d&eacute;signe le ﬂux de sortie standard (l'&eacute;cran par d&eacute;faut).</p><p><strong class="txt_emp_is ">Les caract&egrave;res &ldquo;plac&eacute;s dans cout&rdquo; au moyen de l'op&eacute;rateur de sortie &laquo; appara&icirc;tront &agrave; l'&eacute;cran.</strong></p><p><strong class="txt_emp_is ">// Affiche &quot;Hello world!&quot;</strong> plac&eacute; en ﬁn de ligne est un <strong class="txt_emp_is ">commentaire</strong>.</p><p>Tout ce qui est &eacute;crit apr&egrave;s // sera ignor&eacute; par le compilateur (la machine).</p><p>Ce commentaire rend le code plus lisible pour les programmeurs. On &eacute;crit des commentaires pour d&eacute;crire ce que le programme est suppos&eacute; faire et, d'une mani&egrave;re g&eacute;n&eacute;rale, pour fournir des informations utiles impossibles &agrave; exprimer directement dans le code.</p><p>La premi&egrave;re ligne du programme est un commentaire classique: il indique simplement ce que le programme est cens&eacute; faire (et pas ce que nous avons voulu qu'il fasse!). Prenez donc l'habitude de mettre ce type de commentaire au d&eacute;but d'un programme.</p><p>La fonction main de ce programme retourne la valeur 0 (return 0;) &agrave; celui qui l'a appel&eacute;e.</p><p>Comme main() est appel&eacute;e par le &ldquo;syst&egrave;me&rdquo;, il recevra cette valeur. Sur certains syst&egrave;mes (Unix/Linux), elle peut servir &agrave; v&eacute;riﬁer si le programme s'est ex&eacute;cut&eacute; correctement. Un z&eacute;ro (0) indique alors que le programme s'est termin&eacute; avec succ&egrave;s.</p><p>&Eacute;videmment, une valeur diﬀ&eacute;rente de 0 indiquera que le programme a rencontr&eacute; une erreur.</p></div><div class="rBk "><p>En C/C++,une ligne qui commence par un # fait r&eacute;f&eacute;rence &agrave; une directive du pr&eacute;processeur (ou de pr&eacute;compilation). Le pr&eacute;processeur ne traite pas des instructions C/C++ (donc pas de &quot;;&quot;).</p><p>Ici, la directive #include &lt;iostream&gt; demande &agrave; l'ordinateur de rendre accessible (d'&ldquo;inclure&rdquo;) les fonctionnalit&eacute;s contenues dans un ﬁchier nomm&eacute; iostream.</p><p>Ce ﬁchier est fourni avec le compilateur et nous permet d'utiliser cout et l'op&eacute;rateur de sortie &laquo; dans notre programme.</p><p>Un ﬁchier inclus au moyen de #include porte g&eacute;n&eacute;ralement l'extension .h.</p><p>On l'appelle en-t&ecirc;te (header) ou ﬁchier d'en-t&ecirc;te.</p><p>Remarque : En C++, il est maintenant inutile d'ajouter l'extension .h pour les ﬁchiers d'en-t&ecirc;te standard.</p><p>La ligne using namespace std; indique que l'on va utiliser l'espace de nom std par d&eacute;faut.</p></div><div class="rBk "><p><strong class="txt_emp_is ">Remarque</strong> : cout (et cin) existe dans cet espace de nom mais pourrait exister dans d'autres espaces de noms.</p><p>Le nom complet pour y acc&eacute;der est normalement std::cout.</p><p>L'op&eacute;rateur :: permet la r&eacute;solution de port&eacute;e en C++ (un peu comme le / dans un chemin!).</p><p>Comme on utilise quasiment tout le temps des fonctions de la biblioth&egrave;que standard, on utilise presque tout le temps &quot; using namespace std; &quot; pour se simpliﬁer la vie!</p></div></div></div></div></section></div></div></div></main><footer id="footer" role="contentinfo" tabindex="-1"><hr class="hidden"></footer></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();</script>
+ </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Connectez-Vous</title>
+  <div id="social">
+    <a href="CAP.html"><img style="margin-bottom:0px; margin-left : 7%" src="..\images\2.png " alt="Terrain" width="374"
+        height="105  "></a>
+    <a href="https://fr-fr.facebook.com/parismarathon/>"><img p
+        style="margin-bottom: 25px; margin-left: 4% ; margin-right: 0%" src="..\images\capf.png " alt="FaceBook"
+        width="40" height="40"></a>
+    <a href="https://www.instagram.com/parismarathon/?hl=fr>"><img
+        style="margin-bottom: 25px; margin-left: 0px ; margin-right: 1%" src="..\images\capi.png " alt="Insta"
+        width="40" height="40"></a>
+    <a href="hhttps://mobile.twitter.com/Paris/status>"><img
+        style="margin-bottom: 25px; margin-left: 0px ; margin-right: 1%" src="..\images\capt.png " alt="Twitter"
+        width="40" height="40"></a>
+    <a href="https://www.youtube.com/watch?v=g5GjuRS9sVA>"><img
+        style="margin-bottom: 25px; margin-left: 0px ; margin-right: 2%" src="..\images\capy.png " alt="YouTube"
+        width="40" height="40"></a>
+    <a href="Mon_compte/Connected.html"><img style="margin-bottom: 1%; margin-left: 5% ; margin-right: 0%"
+        src="..\images\MonAppli.png " alt="YouTube" width="70" height="65"></a>
+    <a href="Mon_Compte.html"><img style="margin-bottom: 1%; margin-left: 20px ; margin-right: 0%"
+        src="..\images\Connexion.png " alt="YouTube" width="70" height="65"></a>
+    <a href="Mon_compte/Inscription.html"><img style="margin-bottom: 1%; margin-left: 0% ; margin-right: 10%"
+        src="..\images\Sinscrire.png " alt="YouTube" width="70" height="65"></a>
+  </div>
+  <div class="header">
+    <nav>
+      <ul class="menu">
+        <li><a href="CAP.html">Accueil</a></li>
+        <li><a href="Boutique.html">Boutique</a></li>
+        <li><a href="Mon_Compte.html">Mon Compte</a></li>
+        <li><a href="plan.html">Plan de course</a></li>
+        <li><a href="Contacts.html">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+</head>
+
+<body class="light">
+  <div class="btn-toggle">Go Nuit</div>
+  <div class="arriereplan">
+    <div class="contenu">
+
+
+      <div class="box">
+        <form class="formBloc" action ="test.php" >
+
+          <h3><strong>Connectez</strong>-Vous</h3>
+
+          <div class="formGroupe">
+            <label for="mail">Email</label>
+            <input type="text" id="mail">
+          </div>
+
+          <div class="formGroupe">
+            <label for="mdp">Mot de passe</label>
+            <input type="password" id="mdp">
+          </div>
+
+          <div class="formGroupe" onclick = "login()" >
+            <input type="button" value="LOGIN" class="buttonSub">
+          </div>
+
+          <div id="valid"></div>
+
+          <div class="mdpPerdu">
+            <a href="Mon_compte/Mot_de_passe.html">Mot de passe perdu ?</a>
+          </div>
+        </form>
+        <script src="Mon_compte.js"></script>
+</body>
+
+</html>

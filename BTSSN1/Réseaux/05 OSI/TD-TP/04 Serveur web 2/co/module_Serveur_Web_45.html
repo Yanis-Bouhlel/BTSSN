@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Solution d'exercice</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.103 / Opale 3.6.100">
+  <meta name="revision" content="2020-11-06 11:15">
+  <link rel="start" href="module_Serveur_Web.html" title="Serveur Web">
+  <meta name="author" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"kh65x6au"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_Serveur_Web_45.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+ </head>
+ <body class="subWin eval">
+  <div id="root"><header id="header" role="banner"><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article result"><h2 class="hBk_ti"><span>PHP</span></h2><div class="hBk_co "><script type="text/JavaScript">
+var lOfsK7xIcLbYVyVCl8Kpoh_Asol = {
+
+	fId : "lOfsK7xIcLbYVyVCl8Kpoh",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.lOfsK7xIcLbYVyVCl8Kpoh_Asol_form;
+		for (var i=0; i < vForm.lOfsK7xIcLbYVyVCl8Kpoh_Asol_input.length; i++) {
+			vForm.lOfsK7xIcLbYVyVCl8Kpoh_Asol_input[i].disabled = true;
+			vForm.lOfsK7xIcLbYVyVCl8Kpoh_Asol_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("lOfsK7xIcLbYVyVCl8Kpoh_Asol_in"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("lOfsK7xIcLbYVyVCl8Kpoh_Asol_N_responseTi"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.lOfsK7xIcLbYVyVCl8Kpoh_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("lOfsK7xIcLbYVyVCl8Kpoh_Asol_SN42");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.lOfsK7xIcLbYVyVCl8Kpoh_Asol_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+				var vSol = vForm.lOfsK7xIcLbYVyVCl8Kpoh_Asol_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "collapsed");
+				vSol.checked = false;
+				vForm.lOfsK7xIcLbYVyVCl8Kpoh_Asol_input[i].removeAttribute("aria-hidden");
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 2 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+				var vSol = vForm.lOfsK7xIcLbYVyVCl8Kpoh_Asol_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "visible");
+				vSol.checked = (i+1 == 2);
+				vForm.lOfsK7xIcLbYVyVCl8Kpoh_Asol_input[i].setAttribute("aria-hidden", "true");
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("lOfsK7xIcLbYVyVCl8Kpoh_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = lOfsK7xIcLbYVyVCl8Kpoh_Asol;
+scOnUnloads[scOnUnloads.length] = lOfsK7xIcLbYVyVCl8Kpoh_Asol;
+</script><div id="lOfsK7xIcLbYVyVCl8Kpoh_Asol_A" style="display:none;"><div class="solBody"><div class="question"><h3 class="question_ti"><span>&Eacute;nonc&eacute;</span></h3><div class="rBk "><p>Par qui sont interpr&eacute;t&eacute;es les balises PHP&nbsp;?</p></div></div><div class="score"><h3 class="score_ti"><span>R&eacute;sultat</span></h3><div class="scoreEval " aria-live="polite"><div id="lOfsK7xIcLbYVyVCl8Kpoh_Asol_SN42"><span></span></div></div></div><div class="sol"><h3 class="sol_ti"><span>Correction</span></h3><div id="lOfsK7xIcLbYVyVCl8Kpoh_Asol_N_responseTi" class="response_ti"><span aria-hidden="true"><span>Votre choix</span></span><span><span>Choix attendu</span></span><span aria-hidden="true"><span>R&eacute;ponse</span></span></div><form action name="lOfsK7xIcLbYVyVCl8Kpoh_Asol_form" id="lOfsK7xIcLbYVyVCl8Kpoh_Asol_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="lOfsK7xIcLbYVyVCl8Kpoh_Asol_input" id="lOfsK7xIcLbYVyVCl8Kpoh_Asol_in0" value="0" onclick="lOfsK7xIcLbYVyVCl8Kpoh_Asol.setResp(this, 0);" aria-labelledby="lOfsK7xIcLbYVyVCl8Kpoh_Asol_lbl0"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="lOfsK7xIcLbYVyVCl8Kpoh_Asol_sol" id="lOfsK7xIcLbYVyVCl8Kpoh_Asol_sol0" value disabled aria-labelledby="lOfsK7xIcLbYVyVCl8Kpoh_Asol_lbl0"></div><div class="choiceList_la " id="lOfsK7xIcLbYVyVCl8Kpoh_Asol_lbl0"><div class="choice"><div class="label"><p>Par le client</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="lOfsK7xIcLbYVyVCl8Kpoh_Asol_input" id="lOfsK7xIcLbYVyVCl8Kpoh_Asol_in1" value="1" onclick="lOfsK7xIcLbYVyVCl8Kpoh_Asol.setResp(this, 1);" aria-labelledby="lOfsK7xIcLbYVyVCl8Kpoh_Asol_lbl1"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="lOfsK7xIcLbYVyVCl8Kpoh_Asol_sol" id="lOfsK7xIcLbYVyVCl8Kpoh_Asol_sol1" value disabled aria-labelledby="lOfsK7xIcLbYVyVCl8Kpoh_Asol_lbl1"></div><div class="choiceList_la " id="lOfsK7xIcLbYVyVCl8Kpoh_Asol_lbl1"><div class="choice"><div class="label"><p>Par le serveur</p></div></div></div></li></ul></form></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><span class="evalCounter"><span class="seen">5</span><span class="over">/</span><span class="total">6</span></span><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="module_Serveur_Web_43.html" target="_self" class="btnNav prevEval" title="Pr&eacute;c&eacute;dent (Solution d'exercice)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="module_Serveur_Web_47.html" target="_self" class="btnNav nextEval" title="Suivant (Solution d'exercice)"><span>Suivant</span></a></li></ul></nav></div></div></main></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();</script>
+ </body>
+</html>

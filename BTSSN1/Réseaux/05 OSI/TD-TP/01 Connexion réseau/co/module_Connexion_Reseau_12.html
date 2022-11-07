@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Trame Ethernet [Comment un ordinateur communique avec un autre ordinateur]</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.103 / Opale 3.6.100">
+  <meta name="revision" content="2020-12-24 16:59">
+  <link rel="start" href="module_Connexion_Reseau.html" title="Comment un ordinateur communique avec un autre ordinateur">
+  <meta name="author" content>
+  <meta name="keywords" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"kj33cn5h"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_Connexion_Reseau_12.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_searchMgr/searchMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_outMgr/outMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/JavaScript">
+outMgr.declareOutline("module_Connexion_Reseau.txt");
+	</script> </head>
+ <body class="default module expUc">
+  <div id="root"><header id="header" role="banner"><h1><span>Comment un ordinateur communique avec un autre ordinateur</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article expUc"><h2 class="hBk_ti"><span>Trame Ethernet</span></h2><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Le bloc d'information ou trame au niveau de la sous-couche MAC d&eacute;fini par la norme 802.3 est compos&eacute; de huit champs&nbsp;:</p><ul class="txt_il "><li class="txt_ili "><p>8 octets indiquant le d&eacute;but de la trame (pr&eacute;ambule et d&eacute;limiteur)&nbsp;;</p></li><li class="txt_ili "><p>L'adresse MAC du destinataire de la trame&nbsp;;</p></li><li class="txt_ili "><p>L'adresse MAC de l'&eacute;metteur de la trame&nbsp;;</p></li><li class="txt_ili "><p>le protocole de la couche sup&eacute;rieure&nbsp;;</p></li><li class="txt_ili "><p>les donn&eacute;es avec &eacute;ventuellement du bourrage&nbsp;;</p></li><li class="txt_ili "><p>le code FCS qui permet de d&eacute;tecter d'&eacute;ventuelle erreur de transmission.</p></li></ul><table class="txt_tb "><colgroup><col style="width:156px;width:20.09ch;"><col style="width:142px;width:18.43ch;"><col style="width:305px;width:38.35ch;"></colgroup><tr class="txt_head_tbtr "><th scope="col"><p>Taille</p></th><th scope="col"><p>Valeur</p></th><th scope="col"><p>Contenu</p></th></tr><tr><td><p>7 octets</p></td><td><p>1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp; &nbsp;1&nbsp;&nbsp;0</p><p>1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp; &nbsp;1&nbsp;&nbsp;0</p></td><td><p>Pr&eacute;ambule</p></td></tr><tr><td><p>1 octet</p></td><td><p>1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp; &nbsp;1&nbsp;&nbsp;1</p></td><td><p>D&eacute;limiteur de d&eacute;but de trame</p></td></tr><tr><td><p>6 octets</p></td><td></td><td><p>Adresse destination</p></td></tr><tr><td><p>6 octets</p></td><td></td><td><p>Adresse source</p></td></tr><tr><td><p>2 octets</p></td><td></td><td><p>Protocole utilis&eacute;</p></td></tr><tr><td><p>Entre 46 et 1500 octets</p></td><td></td><td><p>Informations + Bits de bourrage si n&eacute;cessaire</p></td></tr><tr><td><p>4 octets</p></td><td></td><td><p>FCS</p></td></tr></table></div></div></div><div class="example pBk"><h3 class="example_ti pBk_ti"><span><i class="type"><span>Exemple</span></i><span class="hidden"> : </span><span class="title">Exemples de types en hexad&eacute;cimal</span></span></h3><div class="example_co pBk_co"><div class="rBk "><p>0x0800 : protocole IPv4</p><p>0x0806 : protocole ARP</p><p>0x8035 : protocole RARP</p><p>0x809B : protocole AppleTalk</p><p>0x86DD : protocole IPv6</p><p>0x814C : protocole SNMP Over Ethernet</p></div></div></div><div class="complement pBk"><h3 class="complement_ti pBk_ti"><span><i class="type"><span>Compl&eacute;ment</span></i><span class="hidden"> : </span><span class="title"></span></span></h3><div class="complement_co pBk_co"><div class="rBk "><p>Le pr&eacute;ambule est compos&eacute; de 7 octets form&eacute;s d'une succession de 0 et de 1, assure la synchronisation du r&eacute;cepteur sur la trame &eacute;mise (horloge). Il est suivi par le d&eacute;limiteur de d&eacute;but de trame (octet 10101011) qui permet de trouver le d&eacute;but du champ des adresses.</p><p>Le champ de &laquo;&nbsp;bourrage&nbsp;&raquo; n'est utilis&eacute; que si la longueur de la trame est inf&eacute;rieure &agrave; la limite impos&eacute;e pour le fonctionnement correct de l'algorithme CSMA/CD (la taille totale des champs &laquo;&nbsp;bourrage&nbsp;&raquo; et &laquo;&nbsp;information&nbsp;&raquo; doit &ecirc;tre sup&eacute;rieure ou &eacute;gale &agrave; 46 octets).</p><p>La somme de contr&ocirc;le (Frame Check Sequence) sur 4 octets est calcul&eacute;e suivant un code de redondance cyclique (CRC) qui permet de d&eacute;tecter les erreurs de transmission (polyn&ocirc;me cyclique g(x)&nbsp;: g(x) = x32 + x26 + x22 + x16 + x12 + x11 + x10 + x8 + x7 + x5 + x4 + x2 + x).</p></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="module_Connexion_Reseau_11.html" target="_self" class="btnNav prev" title="Pr&eacute;c&eacute;dent (Ethernet)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="module_Connexion_Reseau_13.html" target="_self" class="btnNav next" title="Suivant (Activit&eacute;&nbsp;: Analyse de trame ICMP)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav id="menu" class="pageSelector" role="navigation" tabindex="-1" aria-label="menu principal"><hr class="hidden"><ul class="mnu static" data-totalPages="20"><li class="sel_no anc_no type_l  dpt_0 obj"><div class="lbl type_l" id="module_Connexion_Reseau_1.html"><a href="module_Connexion_Reseau_1.html" target="_self" class="item"><span>Objectifs</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Connexion_Reseau_2.html"><a href="module_Connexion_Reseau_2.html" target="_self" class="item"><span>Adresse MAC</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_Connexion_Reseau_3.html"><a href="module_Connexion_Reseau_3.html" target="_self" class="item" type="up"><span>Protocole Ethernet</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 intro"><div class="lbl type_l" id="module_Connexion_Reseau_9.html"><a href="module_Connexion_Reseau_9.html" target="_self" class="item"><span>Introduction</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Connexion_Reseau_10.html"><a href="module_Connexion_Reseau_10.html" target="_self" class="item"><span>Mod&egrave;le OSI</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Connexion_Reseau_11.html"><a href="module_Connexion_Reseau_11.html" target="_self" class="item"><span>Ethernet</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Connexion_Reseau_12.html"><span class="item"><span>Trame Ethernet</span></span></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Connexion_Reseau_13.html"><a href="module_Connexion_Reseau_13.html" target="_self" class="item"><span>Activit&eacute;&nbsp;: Analyse de trame ICMP</span></a></div></li></ul></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Connexion_Reseau_4.html"><a href="module_Connexion_Reseau_4.html" target="_self" class="item"><span>Protocole ARP</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="grain.html"><a href="grain.html" target="_self" class="item"><span>&Eacute;valuation</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden"><nav class="headingSelector" role="navigation"><ul class="mnu"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_Connexion_Reseau.html" target="_self" class="item" type="index" title="Page d'accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" role="contentinfo" tabindex="-1"><hr class="hidden"><a id="linkSp" target="_blank" href="https://www.scenari.org" title="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)"><span><img alt="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)" src="../skin/img/tpl/scBtn.png"></span></a></footer></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();outMgr.init();</script>
+ </body>
+</html>

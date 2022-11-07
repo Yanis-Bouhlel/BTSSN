@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Exercice d'auto-&eacute;valuation</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.103 / Opale 3.6.100">
+  <meta name="revision" content="2020-12-21 19:58">
+  <link rel="start" href="module_Connexion_Reseau.html" title="Comment un ordinateur communique avec un autre ordinateur">
+  <meta name="author" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"kiyzey46"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_Connexion_Reseau_26.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+ </head>
+ <body class="subWin eval">
+  <div id="root"><header id="header" role="banner"><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article eval"><h2 class="hBk_ti"><span>Sous -couche du mod&egrave;le OSI</span></h2><div class="hBk_co "><script type="text/JavaScript">
+var ImxQtN2ekVkNqrKK2xa3Yc_Aeval = {
+
+	fId : "ImxQtN2ekVkNqrKK2xa3Yc",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "init" : {
+
+	this.refreshResult = function(pDisplay){
+		if(pDisplay) this.fResultDisplay = pDisplay;
+		if(this.fResultDisplay == "none") for(var i=this.fLabels.length -1; i >=0; i--)  scDragMgr.helpers.delClass(this.fLabels[i],"assmntResult_Right","assmntResult_Wrong");
+		else for(var i=this.fLabels.length -1; i >=0; i--) {
+			var vLabel = this.fLabels[i];
+
+			var vOldClass = (vLabel.sG == vLabel.rG ) ? "assmntResult_Wrong" : "assmntResult_Right";
+			var vNewClass = (vLabel.sG == vLabel.rG ) ? "assmntResult_Right" : "assmntResult_Wrong";
+
+			scDragMgr.helpers.switchClass(vLabel, vOldClass, vNewClass);
+		}
+	};
+var vLoadRespSession = "eval";
+
+		for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], true);
+		this.load(vLoadRespSession);
+		this.synch();
+	this.fResultDisplay = "none";
+
+scAssmntMgr.setMode(sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_N_"), "visible");
+this.fRespSession = "eval";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, this.fRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, this.fRespSession, "attempt");
+
+		this.computeScore = function() {
+
+		this.refreshScoresFeedbacks();
+		this.refreshResult();
+	}
+
+if(this.fRespSession != vLoadRespSession) this.saveResp(this.fRespSession);
+
+		this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+case "read" : {
+
+	this.refreshResult = function(pDisplay){
+		if(pDisplay) this.fResultDisplay = pDisplay;
+		if(this.fResultDisplay == "none") for(var i=this.fLabels.length -1; i >=0; i--)  scDragMgr.helpers.delClass(this.fLabels[i],"assmntResult_Right","assmntResult_Wrong");
+		else for(var i=this.fLabels.length -1; i >=0; i--) {
+			var vLabel = this.fLabels[i];
+
+			var vOldClass = (vLabel.sG == vLabel.rG ) ? "assmntResult_Wrong" : "assmntResult_Right";
+			var vNewClass = (vLabel.sG == vLabel.rG ) ? "assmntResult_Right" : "assmntResult_Wrong";
+
+			scDragMgr.helpers.switchClass(vLabel, vOldClass, vNewClass);
+		}
+	};
+var vLoadRespSession = "eval";
+
+		for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], false);
+		this.load(vLoadRespSession);
+		this.synch();
+	this.fResultDisplay = "none";
+
+scAssmntMgr.setMode(sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_N_"), "visible");
+this.fRespSession = null;
+
+		this.computeScore = function() {
+
+		this.refreshScoresFeedbacks();
+		this.refreshResult();
+	}
+
+
+		this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.ImxQtN2ekVkNqrKK2xa3Yc_Aeval_form;
+		switch(this.fCurSeq) {
+case "init" : {
+		this.refreshResult("none");
+
+		break;
+	}
+case "read" : {
+		this.refreshResult("none");
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(scServices.assmntMgr.getCompletionStatus(this.fId, "eval") != "complete" && true) return "init";
+	return "read";
+	},
+
+	saveResp:function(pSession){
+		if(pSession==null) return;
+		var vLabel = this.fLabels[0];
+		var vStr = "[{g:" + vLabel.rG + ",offs:" + vLabel.rO + "," + scDragMgr.saveLabelPos(vLabel) + "}";
+		for(var i=1, len=this.fLabels.length; i < len; i++) {
+			vLabel = this.fLabels[i];
+			vStr += ",{g:" + vLabel.rG + ",offs:" + vLabel.rO + "," + scDragMgr.saveLabelPos(vLabel) + "}";
+		}
+		vStr+="]";
+		scServices.assmntMgr.setResponse(this.fId, pSession, "pos", vStr);
+	},
+	load:function(pSession){
+		var vStr = (pSession!=null) ? scServices.assmntMgr.getResponse(this.fId, pSession, "pos") : null;
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			for(var j=vGroup.length-1; j >=0; j--) vGroup[j].labelsToAdd = [];
+		}
+		if(vStr) {
+						var vList = eval(vStr);
+			for(var i=0, len=this.fLabels.length; i < len; i++) {
+				var vLabelToAdd = vList[i];
+				vLabelToAdd.label = this.fLabels[i];
+				var vGroupC = this.fGroupsC[vLabelToAdd.g];
+				if(vGroupC.length == 1) vGroupC[0].labelsToAdd[vLabelToAdd.offs] = vLabelToAdd; 
+				else vGroupC[vLabelToAdd.offs].labelsToAdd.push(vLabelToAdd);
+			}
+		} else {
+						var vBasketC = this.fGroupsC[0];
+
+			for(var i=vBasketC.length-1; i >=0; i--) for(var j=0, vLen=vBasketC[i]._Labels.length; j < vLen; j++) vBasketC[i].labelsToAdd.push({label:vBasketC[i]._Labels[j]});
+
+		}
+		scDragMgr.repopulateContainers("ImxQtN2ekVkNqrKK2xa3Yc_Aeval");
+	},
+	synch:function(){
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			var vOffset = 0;
+			for(var j=0, vLenJ=vGroup.length; j < vLenJ; j++) {
+				var vItems = scDragMgr.getLabels(vGroup[j]);
+				var vLenK = vItems.length;
+								if(vLenK == 0) vOffset++;
+				else for(var k=0; k < vLenK; k++) {
+					vItems[k].rG = i;
+					vItems[k].rO = vOffset++;
+				}
+			}
+		}
+	},
+	refreshScoresFeedbacks : function(){
+
+	},
+	onLoad: function(){
+	try{
+		var onChange = function() {
+ImxQtN2ekVkNqrKK2xa3Yc_Aeval.synch();
+ImxQtN2ekVkNqrKK2xa3Yc_Aeval.computeScore();
+ImxQtN2ekVkNqrKK2xa3Yc_Aeval.saveResp(ImxQtN2ekVkNqrKK2xa3Yc_Aeval.fRespSession);
+			scServices.assmntMgr.commit();
+		}
+		this.fLabels = [];
+		var vLabel, vC;
+scDragMgr.makeContainer("ImxQtN2ekVkNqrKK2xa3Yc_Aeval", sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_S_N4d"), vC = sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_S_N4f"), sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_S_N5a")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddBasketDragOver');
+vLabel = sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_LN73a");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("ImxQtN2ekVkNqrKK2xa3Yc_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_LN75b");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=2;
+scDragMgr.makeDraggableLabel("ImxQtN2ekVkNqrKK2xa3Yc_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_LN77c");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=3;
+scDragMgr.makeDraggableLabel("ImxQtN2ekVkNqrKK2xa3Yc_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_LN79d");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=4;
+scDragMgr.makeDraggableLabel("ImxQtN2ekVkNqrKK2xa3Yc_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+scDragMgr.makeContainer("ImxQtN2ekVkNqrKK2xa3Yc_Aeval", sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN6d_N729"), vC = sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN74_N729"), sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN76_N729")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("ImxQtN2ekVkNqrKK2xa3Yc_Aeval", sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN6d_N74a"), vC = sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN74_N74a"), sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN76_N74a")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("ImxQtN2ekVkNqrKK2xa3Yc_Aeval", sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN6d_N76b"), vC = sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN74_N76b"), sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN76_N76b")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("ImxQtN2ekVkNqrKK2xa3Yc_Aeval", sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN6d_N78c"), vC = sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN74_N78c"), sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN76_N78c")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+this.fGroupsC = [scDragMgr.getContainers("ImxQtN2ekVkNqrKK2xa3Yc_Aeval", sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_L")),scDragMgr.getContainers("ImxQtN2ekVkNqrKK2xa3Yc_Aeval", sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_RN729")),scDragMgr.getContainers("ImxQtN2ekVkNqrKK2xa3Yc_Aeval", sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_RN74a")),scDragMgr.getContainers("ImxQtN2ekVkNqrKK2xa3Yc_Aeval", sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_RN76b")),scDragMgr.getContainers("ImxQtN2ekVkNqrKK2xa3Yc_Aeval", sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_RN78c"))];
+		for(var i = this.fGroupsC[0].length-1; i >=0; i--) this.fGroupsC[0][i]._Labels = scDragMgr.getLabels(this.fGroupsC[0][i]);
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("ImxQtN2ekVkNqrKK2xa3Yc_Aeval_A");
+		vNodeRoot.style.display = "block"; 
+	}catch(e){console.log(e);}
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = ImxQtN2ekVkNqrKK2xa3Yc_Aeval;
+scOnUnloads[scOnUnloads.length] = ImxQtN2ekVkNqrKK2xa3Yc_Aeval;
+</script><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_A" style="display:none;"><div class="evalBody"><div class="question"></div><div class="response" aria-live="polite"><table id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_N_" class="mtTable"><tr><td class="mtTdBasket"><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_L" class="ddBasket "><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_S_N4d" class="ddBasketCatch "><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_S_N4f" class="ddBasketCont "><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_LN75b" class="mtLabel "><p>Physical Layer Signaling</p></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_LN79d" class="mtLabel "><p>LLC</p></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_LN73a" class="mtLabel "><p>Media Access Unit</p></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_LN77c" class="mtLabel "><p>MAC</p></div></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_S_N5a" class="ddBasketIfEmpty "><span>Plus d'&eacute;l&eacute;ments &agrave; cat&eacute;goriser</span></div><div class="ddBasketEnd"></div></div></div></td><td class="mtTdArrow"></td><td class="mtTdDropCont"><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_RN729" class="ddRepArea "><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN6d_N729" class="ddDropCatch "><div class="ddDropTi"><p>Couche 1&nbsp;: 1&egrave;re sous-couche</p></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN74_N729" class="ddDropCont "></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN76_N729" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_RN74a" class="ddRepArea "><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN6d_N74a" class="ddDropCatch "><div class="ddDropTi"><p>Couche 1&nbsp;: 2nde sous-couche</p></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN74_N74a" class="ddDropCont "></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN76_N74a" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_RN76b" class="ddRepArea "><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN6d_N76b" class="ddDropCatch "><div class="ddDropTi"><p>Couche 2&nbsp;: 1&egrave;re sous-couche</p></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN74_N76b" class="ddDropCont "></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN76_N76b" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_RN78c" class="ddRepArea "><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN6d_N78c" class="ddDropCatch "><div class="ddDropTi"><p>Couche 2&nbsp;: 2nde sous-couche</p></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN74_N78c" class="ddDropCont "></div><div id="ImxQtN2ekVkNqrKK2xa3Yc_Aeval_NN76_N78c" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div></td></tr></table></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><span class="evalCounter"><span class="seen">3</span><span class="over">/</span><span class="total">6</span></span><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="module_Connexion_Reseau_24.html" target="_self" class="btnNav prevEval" title="Pr&eacute;c&eacute;dent (Exercice d'auto-&eacute;valuation)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="module_Connexion_Reseau_28.html" target="_self" class="btnNav nextEval" title="Suivant (Exercice d'auto-&eacute;valuation)"><span>Suivant</span></a></li></ul></nav></div></div></main></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();</script>
+ </body>
+</html>

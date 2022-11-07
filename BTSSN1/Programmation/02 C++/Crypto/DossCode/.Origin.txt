@@ -1,0 +1,9 @@
+<<<<<<< Updated upstream
+football
+=======
+<<<<<<< HEAD
+La petite phrase
+=======
+football
+>>>>>>> 03633f35a3ccfddd490ddd8bd7e73fcdfb42affb
+>>>>>>> Stashed changes

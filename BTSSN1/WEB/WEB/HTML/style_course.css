@@ -1,0 +1,58 @@
+.header {
+  
+    background: #2c2c33;
+    height: 50px;
+    width: 100%;
+    margin-left: 0px;
+  }
+ 
+  nav ul li {
+    margin-left: 8%;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 15px;
+    padding: 0px, 5px;
+    width: 250px;
+    transition: 0.5s; /*transition de 0.5 second pour grossir la case*/
+  }
+  nav ul li:hover  /*fonction hover pour le sur l'onglet passage de souris*/ {
+    transition: 0.5s;  /*transition de 0.5 seconde pour retrecir la case de 250px a 230px*/
+    transform: scale(1.05);
+  }
+  ul li a {
+    color: #f3a1df;
+    text-decoration: none;
+    transition:0.5s;
+  }
+  ul li a:hover {
+    color: rgb(255, 255, 255);   		/*couleur du text au passage de la souris*/
+    background: rgb(17, 91, 202);  		/*couleur de l'arriere plan au passage de la souris*/
+    border-bottom: 4px solid rgba(255, 255, 255,0.8); 		/*ligne blanche dans l'onglet*/
+    font-size: large;         /*le taille du texte quand la souris passe dessus */ 
+    transition:0.5s;
+  }
+  #submenu {
+    display: none;
+  }
+  li:hover #submenu {
+    display: inline-block;
+    background: #131313;
+    position: absolute;
+    align-content: center;
+  }
+  #submenu li {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu li {
+    margin-left: 3%;
+  }
+  .menu li a {
+    color: seashell;
+    padding: 15px, 18px;
+    text-decoration: none; 		/*j'enleve le soulignement des liens */
+    display: block;
+    line-height: 46px;
+    text-align: center;  /*tu aligne le texte dans les onglet*/
+  }

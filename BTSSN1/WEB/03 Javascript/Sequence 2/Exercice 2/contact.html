@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+	
+		<meta charset="UTF-8"/>
+		<title> En Course ! Contact </title>
+		<link rel="stylesheet" type="text/css" href="CSS/Forme.css">
+		<link rel="stylesheet" type="text/css" href="CSS/Deco.css">
+	
+	</head>
+	<body>
+	
+		<div id="entete" >
+			<img src="Image/téléchargement.jfif" alt="Site" width="200" height="100">
+			<h1> En Course </h1>
+			<p> Course - Chaussure </p>
+		</div>
+		<hr>
+		<div id="menu">
+		<ul>
+		
+			<li><a href="boutique.html">  BOUTIQUE</a>
+			<li><a href="index.html">  ACCEUIL</a>
+			
+		</ul>
+		</div>
+		<div id="Dcontact">
+
+			<img id="image" src="Image/maison2.png" onclick="Contact()" ondblclick="Remove()"><!-- disparition du message lors du double click -->
+
+			<p id="contact"></p>
+
+		</div>
+		<div id="pied">
+		<hr>
+			<br><p> © Copyright - En Course - 2020-2021 - <a href="">Mentions légals</a> </p>
+			<br>
+		</div>
+		
+	<script>
+
+		var tel="";
+
+	
+			document.getElementById('image').addEventListener("mouseover", function (){
+				if (true){
+					document.getElementById('image').src='Image/maison.png';
+				}});
+				document.getElementById('image').addEventListener("mouseout", function(){
+				if(true){
+					document.getElementById('image').src='Image/maison2.png';
+				}
+				});
+			
+		function Contact(){
+			document.getElementById('contact').innerHTML="Contacter nous au 0800 4562";
+		}
+		function Remove(){
+			document.getElementById('contact').innerHTML="";
+		}
+	</script>
+
+	</body>
+</html>

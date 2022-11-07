@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Types de client/serveur [Client Serveur]</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.103 / Opale 3.6.100">
+  <meta name="revision" content="2020-12-28 14:41">
+  <link rel="start" href="module_ClientServeur.html" title="Client Serveur">
+  <meta name="author" content>
+  <meta name="keywords" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"kj8o62br"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_ClientServeur_4.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_searchMgr/searchMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_outMgr/outMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/JavaScript">
+outMgr.declareOutline("module_ClientServeur.txt");
+	</script> </head>
+ <body class="default module expUc">
+  <div id="root"><header id="header" role="banner"><h1><span>Client Serveur</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article expUc"><h2 class="hBk_ti"><span>Types de client/serveur</span></h2><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Pour s'adresser &agrave; un logiciel serveur, il faut donc son adresse IP et son port, de m&ecirc;me pour r&eacute;pondre &agrave; un client. Mais cela n'est pas suffisant. En effet, il existe deux techniques de communication.</p><p>Prenons deux exemples de la vie courante pour communiquer avec quelqu'un&nbsp;:</p><ul class="txt_il "><li class="txt_ili "><p>Vous pouvez par exemple lui envoyer un courrier (&eacute;lectronique ou pas). Cet envoi est simple. Mais vous n'&ecirc;tes pas garanti que le destinataire a bien re&ccedil;u votre courrier.</p></li><li class="txt_ili "><p>Vous pouvez l'appeler par t&eacute;l&eacute;phone. Votre interlocuteur va vous r&eacute;pondre donc vous serez s&ucirc;r qu'il a bien re&ccedil;u votre message.</p></li></ul><p>Dans l'ordinateur, il existe aussi les deux techniques de communication&nbsp;:</p><ul class="txt_il "><li class="txt_ili "><p>le <strong class="txt_emp_is ">mode connect&eacute;</strong> avec accus&eacute; de r&eacute;ception (comme le t&eacute;l&eacute;phone) mis en &oelig;uvre gr&acirc;ce au protocole <strong class="txt_emp_is ">TCP (Transmission Control Protocol)</strong>.</p><p>Le protocole  TCP, est dit <strong class="txt_emp_is ">protocole orient&eacute; connexion</strong>&nbsp;: cela signifie que si deux processus veulent s'&eacute;changer des donn&eacute;es par TCP, ils doivent pr&eacute;alablement &eacute;tablir une connexion (dite &quot;virtuelle&quot;). Une fois la connexion &eacute;tablie, TCP garantit que toutes les donn&eacute;es envoy&eacute;es par le premier processus seront re&ccedil;ues sans la moindre erreur par le deuxi&egrave;me. Il n'y aura pas de pertes, ni de modification de donn&eacute;es.</p></li><li class="txt_ili "><p>le<strong class="txt_emp_is "> mode non connect&eacute;</strong> sans accus&eacute; de r&eacute;ception (comme le courrier) mis en &oelig;uvre gr&acirc;ce au protocole <strong class="txt_emp_is ">UDP (User Datagram Protocol)&nbsp;</strong></p><p>Avec UDP, aucune connexion n'est n&eacute;cessaire, mais &agrave; l'inverse de TCP, UDP ne donne aucune garantie quant &agrave; la qualit&eacute; du service propos&eacute;&nbsp;: des donn&eacute;es peuvent &ecirc;tre perdues, arriv&eacute;es dans le d&eacute;sordre, &eacute;ventuellement modifi&eacute;es.... C'est &agrave; l'utilisateur d'effectuer ces contr&ocirc;les, si cela est n&eacute;cessaire.</p></li></ul><p>Ces deux protocoles font partie de la<strong class="txt_emp_is "> couche 4</strong> (<strong class="txt_emp_is ">transport</strong>) du mod&egrave;le OSI.</p></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="module_ClientServeur_3.html" target="_self" class="btnNav prev" title="Pr&eacute;c&eacute;dent (Client/serveur)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="module_ClientServeur_5.html" target="_self" class="btnNav next" title="Suivant (Couche transport)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav id="menu" class="pageSelector" role="navigation" tabindex="-1" aria-label="menu principal"><hr class="hidden"><ul class="mnu static" data-totalPages="18"><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_ClientServeur_1.html"><a href="module_ClientServeur_1.html" target="_self" class="item" type="up"><span>Pr&eacute;sentation</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_ClientServeur_2.html"><a href="module_ClientServeur_2.html" target="_self" class="item"><span>Notions de client-serveur</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_ClientServeur_3.html"><a href="module_ClientServeur_3.html" target="_self" class="item"><span>Client/serveur</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_ClientServeur_4.html"><span class="item"><span>Types de client/serveur</span></span></div></li></ul></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_ClientServeur_5.html"><a href="module_ClientServeur_5.html" target="_self" class="item"><span>Couche transport</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_ClientServeur_6.html"><a href="module_ClientServeur_6.html" target="_self" class="item"><span>Protocole UDP</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_ClientServeur_7.html"><a href="module_ClientServeur_7.html" target="_self" class="item"><span>Protocole TCP</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="grain.html"><a href="grain.html" target="_self" class="item"><span>&Eacute;valuation</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden"><nav class="headingSelector" role="navigation"><ul class="mnu"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_ClientServeur.html" target="_self" class="item" type="index" title="Page d'accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" role="contentinfo" tabindex="-1"><hr class="hidden"><a id="linkSp" target="_blank" href="https://www.scenari.org" title="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)"><span><img alt="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)" src="../skin/img/tpl/scBtn.png"></span></a></footer></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();outMgr.init();</script>
+ </body>
+</html>
