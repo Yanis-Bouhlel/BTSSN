@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Configuration sous Linux [Serveur DHCP]</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.103 / Opale 3.6.100">
+  <meta name="revision" content="2020-11-06 11:00">
+  <link rel="start" href="module_Serveur_DHCP.html" title="Serveur DHCP">
+  <meta name="author" content>
+  <meta name="keywords" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"kh65dgcu"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_Serveur_DHCP_10.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_searchMgr/searchMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_outMgr/outMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/JavaScript">
+outMgr.declareOutline("module_Serveur_DHCP.txt");
+	</script> </head>
+ <body class="default module expUc">
+  <div id="root"><header id="header" role="banner"><h1><span>Serveur DHCP</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article expUc"><h2 class="hBk_ti"><span>Configuration sous Linux</span></h2><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>L'objectif n'est pas de vous apprendre &agrave; installer un serveur DHCP (voir le document ressource correspondant) mais de vous donner les lignes importantes du fichier de configuration du serveur DHCP au travers d'un exemple (les lignes commen&ccedil;ant pas # sont des commentaires).</p></div></div></div><div class="example pBk"><h3 class="example_ti pBk_ti"><span><i class="type"><span>Exemple</span></i><span class="hidden"> : </span><span class="title">Exemple de fichier &quot;/etc/dhcp/dhcpd.conf&quot;</span></span></h3><div class="example_co pBk_co"><div class="rBk listing"><div><div class="code"><div class="code-form "><div class="CodeMirror-static cm-s-default" data-lang="text/x-csrc"><div class="CodeMirror-code"><div class="CodeMirror-line"><div class="CodeMirror-linenumber">1</div><pre><span class="cm-meta"># Le nom de votre serveur dhcp</span></pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">2</div><pre><span class="cm-variable">server</span><span class="cm-operator">-</span><span class="cm-variable">name</span> <span class="cm-string">&quot;dhcp.monreseau.fr&quot;</span>;</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">3</div><pre><span class="cm-meta"># Le domaine attribu&eacute; &agrave; vos clients</span></pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">4</div><pre><span class="cm-variable">option</span> <span class="cm-variable">domain</span><span class="cm-operator">-</span><span class="cm-variable">name</span> <span class="cm-string">&quot;monreseau.fr&quot;</span>;</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">5</div><pre><span class="cm-meta"># Les serveurs DNS attribu&eacute;s &agrave; vos clients</span></pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">6</div><pre><span class="cm-variable">option</span> <span class="cm-variable">domain</span><span class="cm-operator">-</span><span class="cm-variable">name</span><span class="cm-operator">-</span><span class="cm-variable">servers</span> <span class="cm-number">192.168</span>.<span class="cm-number">0.1</span>, <span class="cm-number">192.168</span>.<span class="cm-number">0.2</span>, <span class="cm-number">8.8</span>.<span class="cm-number">8.8</span>;</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">7</div><pre><span class="cm-meta"># La dur&eacute;e des baux, en secondes (soit ici 2 heures !)</span></pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">8</div><pre><span class="cm-keyword">default</span><span class="cm-operator">-</span><span class="cm-variable">lease</span><span class="cm-operator">-</span><span class="cm-variable">time</span> <span class="cm-number">7200</span>;</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">9</div><pre><span class="cm-variable">max</span><span class="cm-operator">-</span><span class="cm-variable">lease</span><span class="cm-operator">-</span><span class="cm-variable">time</span> <span class="cm-number">7200</span>;</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">10</div><pre><span class="cm-meta"># Le masque de sous-r&eacute;seau</span></pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">11</div><pre><span class="cm-variable">option</span> <span class="cm-variable">subnet</span><span class="cm-operator">-</span><span class="cm-variable">mask</span> <span class="cm-number">255.255</span>.<span class="cm-number">255.0</span>;</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">12</div><pre><span class="cm-meta"># L'adresse de broadcast, qui est optionnelle, mais &ccedil;a vous fera un bon exercice de la calculer ;-)</span></pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">13</div><pre><span class="cm-variable">option</span> <span class="cm-variable">broadcast</span><span class="cm-operator">-</span><span class="cm-variable">address</span> <span class="cm-number">192.168</span>.<span class="cm-number">0.255</span>;</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">14</div><pre><span class="cm-meta"># Le routeur par d&eacute;faut (passerelle)</span></pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">15</div><pre><span class="cm-variable">option</span> <span class="cm-variable">routers</span> <span class="cm-number">192.168</span>.<span class="cm-number">0.254</span>;</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">16</div><pre><span class="cm-meta"># Enfin, nous pr&eacute;cisons le r&eacute;seau utilis&eacute; et les particularit&eacute;s associ&eacute;es (le sous-r&eacute;seau 192.168.0.0 dont le masque est 255.255.255.0)</span></pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">17</div><pre><span class="cm-variable">subnet</span> <span class="cm-number">192.168</span>.<span class="cm-number">0.0</span> <span class="cm-variable">netmask</span> <span class="cm-number">255.255</span>.<span class="cm-number">255.0</span> {</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">18</div><pre><span class="cm-meta"># Ici, nous ne voulons attribuer dynamiquement que les adresses de 10 &agrave; 100</span></pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">19</div><pre> <span class="cm-variable">range</span> <span class="cm-number">192.168</span>.<span class="cm-number">0.10</span> <span class="cm-number">192.168</span>.<span class="cm-number">0.100</span>;</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">20</div><pre><span class="cm-meta"># Enfin, nous pouvons sp&eacute;cifier une adresse pr&eacute;cise en fonction d'une machine gr&acirc;ce &agrave; son adresse MAC</span></pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">21</div><pre><span class="cm-meta"># l'ordinateur qui a pour nom barbara-pc et qui a pour adresse MAC 00:23:8B:4B:D1:BD aura l'adresse IP 192.168.0.10</span></pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">22</div><pre> <span class="cm-variable">host</span> <span class="cm-variable">barbara</span><span class="cm-operator">-</span><span class="cm-variable">pc</span> {</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">23</div><pre> <span class="cm-variable">hardware</span> <span class="cm-variable">ethernet</span> <span class="cm-number">00</span>:<span class="cm-number">23</span>:<span class="cm-number">8</span><span class="cm-variable">B</span>:<span class="cm-number">4</span><span class="cm-variable">B</span>:<span class="cm-variable">D1</span>:<span class="cm-variable">BD</span>;</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">24</div><pre> <span class="cm-variable">fixed</span><span class="cm-operator">-</span><span class="cm-variable">address</span> <span class="cm-number">192.168</span>.<span class="cm-number">0.10</span>;</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">25</div><pre> }</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">26</div><pre>}</pre></div><div class="CodeMirror-line"><div class="CodeMirror-linenumber">27</div><pre></pre></div></div></div></div><pre class="code-raw noIndex " style="display:none;"># Le nom de votre serveur dhcp
+server-name &quot;dhcp.monreseau.fr&quot;;
+# Le domaine attribu&eacute; &agrave; vos clients
+option domain-name &quot;monreseau.fr&quot;;
+# Les serveurs DNS attribu&eacute;s &agrave; vos clients
+option domain-name-servers 192.168.0.1, 192.168.0.2, 8.8.8.8;
+# La dur&eacute;e des baux, en secondes (soit ici 2 heures !)
+default-lease-time 7200;
+max-lease-time 7200;
+# Le masque de sous-r&eacute;seau
+option subnet-mask 255.255.255.0;
+# L'adresse de broadcast, qui est optionnelle, mais &ccedil;a vous fera un bon exercice de la calculer ;-)
+option broadcast-address 192.168.0.255;
+# Le routeur par d&eacute;faut (passerelle)
+option routers 192.168.0.254;
+# Enfin, nous pr&eacute;cisons le r&eacute;seau utilis&eacute; et les particularit&eacute;s associ&eacute;es (le sous-r&eacute;seau 192.168.0.0 dont le masque est 255.255.255.0)
+subnet 192.168.0.0 netmask 255.255.255.0 {
+# Ici, nous ne voulons attribuer dynamiquement que les adresses de 10 &agrave; 100
+ range 192.168.0.10 192.168.0.100;
+# Enfin, nous pouvons sp&eacute;cifier une adresse pr&eacute;cise en fonction d'une machine gr&acirc;ce &agrave; son adresse MAC
+# l'ordinateur qui a pour nom barbara-pc et qui a pour adresse MAC 00:23:8B:4B:D1:BD aura l'adresse IP 192.168.0.10
+ host barbara-pc {
+ hardware ethernet 00:23:8B:4B:D1:BD;
+ fixed-address 192.168.0.10;
+ }
+}
+</pre></div></div></div><div class="rBk "><p><strong class="txt_emp_is ">Remarque&nbsp;</strong>: la partie host est optionnelle et ne sert que quand on veut attribuer &agrave; un ordinateur une adresse IP pr&eacute;d&eacute;finie (l'ordinateur est connu gr&acirc;ce &agrave; son adresse MAC).</p></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="module_Serveur_DHCP_3.html" target="_self" class="btnNav prev" title="Pr&eacute;c&eacute;dent (Configuration sous Linux)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="module_Serveur_DHCP_11.html" target="_self" class="btnNav next" title="Suivant (Exercice&nbsp;: Fichier de configuration sous Linux)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav id="menu" class="pageSelector" role="navigation" tabindex="-1" aria-label="menu principal"><hr class="hidden"><ul class="mnu static" data-totalPages="12"><li class="sel_no anc_no type_l  dpt_0 intro"><div class="lbl type_l" id="module_Serveur_DHCP_1.html"><a href="module_Serveur_DHCP_1.html" target="_self" class="item"><span>Introduction</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Serveur_DHCP_2.html"><a href="module_Serveur_DHCP_2.html" target="_self" class="item"><span>Protocole DHCP</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_Serveur_DHCP_3.html"><a href="module_Serveur_DHCP_3.html" target="_self" class="item" type="up"><span>Configuration sous Linux</span></a></div><ul class="sub mnu_open"><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Serveur_DHCP_10.html"><span class="item"><span>Configuration sous Linux</span></span></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="module_Serveur_DHCP_11.html"><a href="module_Serveur_DHCP_11.html" target="_self" class="item"><span>Exercice&nbsp;: Fichier de configuration sous Linux</span></a></div></li></ul></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="grain.html"><a href="grain.html" target="_self" class="item"><span>&Eacute;valuation</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden"><nav class="headingSelector" role="navigation"><ul class="mnu"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_Serveur_DHCP.html" target="_self" class="item" type="index" title="Page d'accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" role="contentinfo" tabindex="-1"><hr class="hidden"><a id="linkSp" target="_blank" href="https://www.scenari.org" title="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)"><span><img alt="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)" src="../skin/img/tpl/scBtn.png"></span></a></footer></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();outMgr.init();</script>
+ </body>
+</html>

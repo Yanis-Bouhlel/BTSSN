@@ -1,0 +1,128 @@
+input
+{
+	margin-top: 3px;
+	margin-left: 50px;
+	width: 150px;
+	padding: 6px 10px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	border: 2px solid #A8A8A8;
+	margin-top: 10px;
+	transition: width 0.5s ease-in-out;
+}
+input[type=text]:focus,[type=password]:focus,[type=email]:focus
+{
+	width: 20%;
+}
+input#code_postal
+{
+	width: 150px;
+	margin-left: 5px;
+}
+input#newsletter
+{
+	margin-top: 3px;
+	margin-left: 50px;
+	width: 20px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	border: 2px solid #A8A8A8;
+	margin-top: 10px;
+}
+input#email
+{
+	width: 200px;
+	margin-left: 5px;
+}
+textarea#adresse
+{
+	margin-top: 3px;
+	margin-left: 50px;
+	width: 315px;
+	padding: 6px 10px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	border: 2px solid #A8A8A8;
+	margin-top: 10px;
+	transition: width 0.5s ease-in-out;
+}
+select#civil
+{
+	margin-top: 3px;
+	margin-left: 50px;
+	width: 150px;
+	padding: 6px 10px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	border: 2px solid #A8A8A8;
+	margin-top: 10px;
+}
+select#civil[type=text]:focus,[type=password]:focus,[type=email]:focus
+{
+	width: 20%;
+}
+div#entete
+{
+  	padding: 5px;
+}
+div#entete h1 
+{
+	display: inline-block;
+	margin: 0px;
+	margin-left: 5px;
+	position: absolute;
+	top: 50px;
+}
+div#entete p 
+{
+	display: inline-block;
+	margin: 0px;
+	margin-left: 5px;
+	position: absolute;
+	top: 80px;
+}
+div#menu
+{ 
+   float: left;
+   height: 400px;
+   margin-right: 10px;
+}
+div#menu ul
+{ 
+   width: 100%;
+   padding-left: 0px;
+}
+
+div#menu li 
+{
+   padding: 5px 0px 5px 0px;
+   border: 1px solid gray;
+   list-style-type: none;
+}
+div#menu a 
+{ 
+   padding: 5px 35px 5px 5px;
+   text-decoration: none;
+}
+div#bloc
+{ 
+   float: left;
+   margin: 10px 0px 10px 0px;
+   padding: 0px 0px 0px 20px;
+   width: 80%;
+}
+div#pied
+{ 
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   display: inline-block;
+   width: 100%;
+   text-align: right;
+}
+div#contact
+{ 
+   float: left;
+   margin: 10px 0px 10px 0px;
+   padding: 0px 0px 0px 20px;
+   width: 80%;
+}

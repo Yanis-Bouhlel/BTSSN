@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Protocole [Serveur DHCP]</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.103 / Opale 3.6.100">
+  <meta name="revision" content="2020-11-06 11:00">
+  <link rel="start" href="module_Serveur_DHCP.html" title="Serveur DHCP">
+  <meta name="author" content>
+  <meta name="keywords" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"kh65dgcu"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_Serveur_DHCP_7.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_searchMgr/searchMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_outMgr/outMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/JavaScript">
+outMgr.declareOutline("module_Serveur_DHCP.txt");
+	</script> </head>
+ <body class="default module expUc">
+  <div id="root"><header id="header" role="banner"><h1><span>Serveur DHCP</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article expUc"><h2 class="hBk_ti"><span>Protocole</span></h2><div class="hBk_co "><div class="complement pBk"><h3 class="complement_ti pBk_ti"><span><i class="type"><span>Compl&eacute;ment</span></i><span class="hidden"> : </span><span class="title"></span></span></h3><div class="complement_co pBk_co"><div class="rBk "><p>Un serveur DHCP configure son client gr&acirc;ce &agrave; un processus en quatre phases&nbsp;:</p><ul class="txt_il "><li class="txt_ili "><p>Demande de bail&nbsp;(<strong class="txt_emp_is ">DHCPDISCOVER</strong>) : demande d'adresse IP avec dans la trame l'adresse IP source 0.0.0.0 et l'adresse IP destination 255.255.255.255.</p></li><li class="txt_ili "><p>Proposition de bail&nbsp;(<strong class="txt_emp_is ">DHCPOFFER</strong>) : r&eacute;ponse du serveur DHCP avec une proposition d'adresse IP et donnant les informations suivantes : dur&eacute;e de bail, masque du r&eacute;seau, adresse IP du serveur DHCP.</p></li><li class="txt_ili "><p>S&eacute;lection de bail&nbsp;(<strong class="txt_emp_is ">DHCPREQUEST</strong>) : le client accepte la proposition.</p></li><li class="txt_ili "><p>Accus&eacute; de r&eacute;ception de bail (<strong class="txt_emp_is ">DHCPACK</strong>)&nbsp;: le serveur envoie au client un accus&eacute; de r&eacute;ception (ou un non accus&eacute; DHCPNAK) validant le bail.</p></li></ul></div><div class="rBk res"><figure role="group" class="resInFlow png"><div class="resInFlow_co "><img src="../res/protocoleDHCP.png" width="370" height="460" alt></div></figure></div><div class="rBk "><p>Ce qui donne :</p></div><div class="rBk res"><figure role="group" class="resInFlow png"><div class="resInFlow_co "><a href="../res/wiresharkDHCP.png" class="imgZoom" target="_blank" onclick="scImgMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fen&ecirc;tre)"><img src="../res/wiresharkDHCP_1.png" width="630" height="44" alt></a></div></figure></div><div class="rBk "><p>1. Le client n'a pas d'IP et utilise 0.0.0.0 pour faire un &quot;broadcast g&eacute;n&eacute;ral (255.255.255.255)&quot;. C'est le DHCP Discover.</p><p>2. Le serveur offre une adresse au client.</p><p>3. Le client fait alors un DHCP Request.</p><p>4. Le serveur accepte.</p><p>5. Le client fait un broadcast ARP pour v&eacute;rifier que l'IP 192.168.0.14 n'est pas dupliqu&eacute;e sur le r&eacute;seau.</p><p>Pour des raisons d'optimisation des ressources r&eacute;seau, les adresses IP sont d&eacute;livr&eacute;es avec une date de d&eacute;but et une date de fin de validit&eacute;. C'est ce qu'on appelle un bail. Un client qui voit son bail arriver &agrave; terme, peut demander au serveur une prolongation du bail par un DHCPREQUEST. De m&ecirc;me, lorsque le serveur verra un bail arriv&eacute; &agrave; terme, il &eacute;mettra un paquet DHCPNAK pour demander au client s'il veut prolonger son bail. Si le serveur ne re&ccedil;oit pas de r&eacute;ponse valide, il rend disponible l'adresse IP.</p><p>Le renouvellement de bail comprend les phases suivantes :</p></div><div class="rBk res"><figure role="group" class="resInFlow png"><div class="resInFlow_co "><img src="../res/renouvellementBail.png" width="354" height="349" alt></div></figure></div><div class="rBk "><p>D'autres paquets peuvent &ecirc;tre envoy&eacute;s :</p><ul class="txt_il "><li class="txt_ili "><p>Demande de prolongation de bail (<strong class="txt_emp_is ">DHCPREQUEST</strong>).</p></li><li class="txt_ili "><p>Annonce du client au serveur que l'adresse est d&eacute;j&agrave; utilis&eacute;e (<strong class="txt_emp_is ">DHCPDECLINE</strong>).</p></li><li class="txt_ili "><p>Lib&eacute;ration de l'adresse IP par le client (<strong class="txt_emp_is ">DHCPRELEASE</strong>).</p></li><li class="txt_ili "><p>Demande de param&egrave;tres locaux en plus de l'adresse IP (<strong class="txt_emp_is ">DHCPINFORM</strong>).</p></li></ul></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="module_Serveur_DHCP_6.html" target="_self" class="btnNav prev" title="Pr&eacute;c&eacute;dent (Bail)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="module_Serveur_DHCP_8.html" target="_self" class="btnNav next" title="Suivant (Test du serveur DHCP)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav id="menu" class="pageSelector" role="navigation" tabindex="-1" aria-label="menu principal"><hr class="hidden"><ul class="mnu static" data-totalPages="12"><li class="sel_no anc_no type_l  dpt_0 intro"><div class="lbl type_l" id="module_Serveur_DHCP_1.html"><a href="module_Serveur_DHCP_1.html" target="_self" class="item"><span>Introduction</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_Serveur_DHCP_2.html"><a href="module_Serveur_DHCP_2.html" target="_self" class="item" type="up"><span>Protocole DHCP</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Serveur_DHCP_4.html"><a href="module_Serveur_DHCP_4.html" target="_self" class="item"><span>Pr&eacute;sentation</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Serveur_DHCP_5.html"><a href="module_Serveur_DHCP_5.html" target="_self" class="item"><span>Fonctionnement</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Serveur_DHCP_6.html"><a href="module_Serveur_DHCP_6.html" target="_self" class="item"><span>Bail</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Serveur_DHCP_7.html"><span class="item"><span>Protocole</span></span></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Serveur_DHCP_8.html"><a href="module_Serveur_DHCP_8.html" target="_self" class="item"><span>Test du serveur DHCP</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Serveur_DHCP_9.html"><a href="module_Serveur_DHCP_9.html" target="_self" class="item"><span>Activit&eacute;&nbsp;: fonctionnement du service DHCP</span></a></div></li></ul></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Serveur_DHCP_3.html"><a href="module_Serveur_DHCP_3.html" target="_self" class="item"><span>Configuration sous Linux</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="grain.html"><a href="grain.html" target="_self" class="item"><span>&Eacute;valuation</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden"><nav class="headingSelector" role="navigation"><ul class="mnu"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_Serveur_DHCP.html" target="_self" class="item" type="index" title="Page d'accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" role="contentinfo" tabindex="-1"><hr class="hidden"><a id="linkSp" target="_blank" href="https://www.scenari.org" title="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)"><span><img alt="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)" src="../skin/img/tpl/scBtn.png"></span></a></footer></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();outMgr.init();</script>
+ </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+
+		<meta charset="UTF-8"/>
+		<title> En Course ! Contact </title>
+		<link rel="stylesheet" type="text/css" href="CSS/Forme.css">
+		<link rel="stylesheet" type="text/css" href="CSS/Deco.css">
+
+	</head>
+	<body>
+
+		<div id="entete" >
+			<img src="Image/téléchargement.jfif" alt="Site" width="200" height="100">
+			<h1> En Course </h1>
+			<p> Course - Chaussure </p>
+		</div>
+		<hr>
+		<div id="menu">
+		<ul>
+
+			<li><a href="boutique.html">  BOUTIQUE</a>
+			<li><a href="index.html">  ACCEUILLE</a>
+
+		</ul>
+		</div>
+		<div id="Dcontact">
+
+			<form id="contact" enctype="text/plain">
+
+					<select name="civil" id="civil" >
+						<option value="-">--</option>
+						<option value="monsieur">Monsieur</option>
+						<option value="madame">Madame</option>
+					</select><br />
+
+					<input type="text" name="name" id="name" placeholder="Nom" /><br />
+
+					<input type="text" name="prenom" id="prenom" placeholder="Prenom"/><br />
+
+       				<textarea name="adresse" id="adresse" rows="5" cols="22" placeholder="adresse"></textarea><br />
+
+       				<input type="text" name="ville" id="ville" placeholder="Ville"/> <input type="number" name="code_postal" id="code_postal" placeholder="Code Postal"/><br />
+
+ 					<input type="checkbox" name="newsletter" id="newsletter" /> <label for="newsletter"> Je souhaite recevoir la newsletter</label>
+
+ 					<input type="email" name="email" id="email" placeholder="E-mail"/><br />
+
+ 					<input type="submit" value="Envoyer" />
+			</form>
+
+			<p style="color: red;display:none;" id="erreur">Veuillez renseigner tout les champs !</p>
+
+		</div>
+		<div id="pied">
+		<hr>
+			<br><p> © Copyright - En Course - 2020-2021 - <a href="">Mentions légals</a> </p>
+			<br>
+		</div>
+
+	<script src="JS/app.js"></script>
+
+	</body>
+</html>

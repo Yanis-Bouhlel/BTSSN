@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>premier programme!</title>
+	</head>
+	<body>
+		<script>
+			var res;//var global
+			var nb = parseInt (prompt('Entrez un nombre:')); //var global
+			//on entre la valeur à divisé par 2
+			function div_par_2(valeur) 
+			// fonction nommé div_par_2 reçoit l'argument "nb" et elle retourne res
+			{
+				var resultat;// var local
+				resultat=valeur/2;
+				// valeur désirer /2
+				return resultat;
+				// on retourne la variable résultat
+			}
+			if (nb)
+			//on vérifie qu'un nombre soit rentré
+			{
+				res = div_par_2(nb);
+				//résultat = la valeur choisit /2
+				alert('le résultat est: ' + res);
+				//affiche la variable res
+			}else 
+				{
+					alert('il faut rentrer un nombre!');
+					// si aucun nombre n'est rentré 
+				}
+		</script>
+	</body>
+</html>

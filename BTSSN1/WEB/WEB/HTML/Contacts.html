@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title> Contacts </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!--<div id ="imageCAp">-->
+
+        <div id="social">
+            <a href="CAP.html"><img style="margin-bottom:0px; margin-left : 7%" src="..\images\2.png " alt="Terrain"
+                    width="374" height="105  "></a>
+            <a href="https://fr-fr.facebook.com/parismarathon/>"><img p
+                    style="margin-bottom: 25px; margin-left: 4% ; margin-right: 0%" src="..\images\capf.png "
+                    alt="FaceBook" width="40" height="40"></a>
+            <a href="https://www.instagram.com/parismarathon/?hl=fr>"><img
+                    style="margin-bottom: 25px; margin-left: 0px ; margin-right: 1%" src="..\images\capi.png "
+                    alt="Insta" width="40" height="40"></a>
+            <a href="hhttps://mobile.twitter.com/Paris/status>"><img
+                    style="margin-bottom: 25px; margin-left: 0px ; margin-right: 1%" src="..\images\capt.png "
+                    alt="Twitter" width="40" height="40"></a>
+            <a href="https://www.youtube.com/watch?v=g5GjuRS9sVA>"><img
+                    style="margin-bottom: 25px; margin-left: 0px ; margin-right: 2%" src="..\images\capy.png "
+                    alt="YouTube" width="40" height="40"></a>
+            <a href="Mon_compte/Connected.html"><img style="margin-bottom: 1%; margin-left: 5% ; margin-right: 0%"
+                    src="..\images\MonAppli.png " alt="YouTube" width="70" height="65"></a>
+            <a href="Mon_Compte.html"><img style="margin-bottom: 1%; margin-left: 20px ; margin-right: 0%"
+                    src="..\images\Connexion.png " alt="YouTube" width="70" height="65"></a>
+            <a href="Mon_compte/Inscription.html"><img style="margin-bottom: 1%; margin-left: 0% ; margin-right: 10%"
+                    src="..\images\Sinscrire.png " alt="YouTube" width="70" height="65"></a>
+        </div>
+        <div class="header">
+        <nav>
+            <ul class="menu">
+                <li><a href="CAP.html">Accueil</a></li>
+                <li><a href="Boutique.html">Boutique</a></li>
+                <li><a href="Mon_Compte.html">Mon Compte</a></li>
+                <li><a href="plan.html">Plan de course</a></li>
+                <li><a href="Contacts.html">Support</a></li>
+            </ul>
+
+        </nav>
+    </div>
+</head>
+
+<body class="light">
+    <div class="btn-toggle">Go Nuit</div>
+    <div class="contenu">
+    <div id="titleas">
+    <h1> BIENVENUE SUR L'ASSISTANCE SAV DU SITE CAD </h1>
+    </div>
+    <div id="com">
+        <h3>Le site SAV pour assurer la prise en main, le montage, l’entretien & la réparation de votre produit !?</h3>
+        <form>
+            <div class="questionayde">
+                <input type="search" name="a" placeholder="Décrivez votre problème">
+            </div>
+            <div class="Boutonayde">
+                <input type="submit" value="rechercher" action="">
+            </div>
+                
+            
+
+        </form>
+        <br>
+        <hr size="4" color="black" />
+        <br>
+        <select id="questionaide">
+            <option value="info">Question en relation avec la course ?</option>
+            <option value="info">Ou se trouve la prochaine course ?</option>
+            <option value="info">Quand se deroulera le prochain évenement ?</option>
+            <option value="info">Comment se procurer une place en ligne ?</option>
+            <option value="info">Comment s'inscrire pour la prochaine course ? </option>
+        </select>
+        <br>
+        <select id="questionaide">
+            <option value="info">Question en relation avec la boutique ?</option>
+            <option value="info">Je ne peut pas commander d'article sur le site. </option>
+            <option value="info">Les paiements sont ils protéger ?</option>
+            <option value="info">Comment fonctionne votre "click and collect" ? </option>
+            <option value="info">Faites vous les livraisons ?</option>
+        </select>
+        <p>En cas de problème non répertorier dans la liste ci dessus ,</p>
+        <p>Veuillez appuyer sur le bouton ci-dessous afin d'envoyer un mail au Service Après Vente. </p>
+        <p>
+            <a href="mailto:Yaniisbhl@outlook.com"><button type="button">Send email</button></a>
+        </p>
+    </div>
+    <button class="open-button" onclick="openForm()">Chat</button>
+    
+    <div class="chat" id="maBox">
+      <form action="/action_page.php" class="form-boite">
+        <h1>Chat</h1>
+    
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Envoyez un chat..." name="msg" required ></textarea>
+    
+        <button type="submit" class="btn">Envoyer</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+      </form>
+    </div>
+    <script>
+        function openForm() {
+          document.getElementById("maBox").style.display = "block";
+        }
+        function closeForm() {
+          document.getElementById("maBox").style.display = "none";
+        }
+        </script>   
+</body>
+<footer>
+    <br>
+    <hr size="4" color="black" />
+    <div id="bas">
+        <br>
+        © CAP - <a href="Contact/Admin.html" style="color:#000000;"> Mention Légal</a>
+        <br>
+        Tous droit reservé.
+    </div>
+    <hr size="4" color="black" />
+</footer>
+<!--CSS-->
+<script src="Mon_compte.js"></script>
+</html>

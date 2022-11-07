@@ -1,0 +1,153 @@
+body
+{
+	font-family: Trebuchet MS;
+	width: 960px;
+	margin: auto;
+	background-image: url(images/bodybkg.gif);
+	color: #D69E43;
+}
+section#intdo
+{
+	position: relative;
+}
+section#intdo h2
+{
+	position: absolute;
+	display: inline-block;
+	top: 40px;
+	left: 100px;
+	color: white;
+}
+section#intdo p
+{
+	position: absolute;
+	display: inline-block;
+	top: 90px;
+	left: 100px;
+	width: 350px;
+}
+section#intdo img
+{
+	width: 100%;
+}
+nav
+{
+	display: inline-block;
+	background-image: url(images/navbg.png);
+	color: White;
+	border-radius: 8px
+}
+nav li
+{
+	display: inline-block;
+	padding: 64px;
+	padding-top: 5px;
+	padding-bottom:  5px;
+}
+a
+{
+	text-decoration: none;
+	color: white;
+
+}
+a:hover
+{
+	text-decoration: none;
+	color: #D69E43;
+}
+section
+{
+	background-color: unset;
+	border-radius: 10px;
+	margin: 5px;
+}
+section#content
+{
+	background-color: white;
+}
+section table
+{
+	border-spacing: 15px;
+}
+section td
+{
+	background-color: #D69E43;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	width: 220px;
+	box-shadow: 6px 6px 4px grey;
+}
+section td p
+{
+	color: black;
+
+}
+section td h2
+{
+	text-decoration: underline;
+}
+.image
+{
+	
+}
+section td img
+{
+	border: 8px solid white;
+	margin: 12px;
+
+}
+section td img:hover
+{
+	border: 8px solid white;
+	margin: 12px;
+	transform: scaleX(1.05);
+}
+section td img#CoffeeArt
+{
+	margin-bottom: 0px;
+}
+h1
+{
+	font-size: 2.6em;
+	margin: 1px;
+	text-shadow: 1px 1px grey;
+	width: 300px;
+	cursor: pointer;
+}
+h1:hover
+{
+	text-shadow: 2px 2px grey;
+}
+footer table
+{
+	background-color: #271408;
+	color: white;
+	border-radius: 8px;
+	margin-left:5px;
+	width: 950px;
+	margin-top: 10px;
+}
+footer table td
+{
+	text-align: left;
+	width: 200px;
+	padding:0px;
+	padding-left: 10px;
+
+}
+footer table th
+{
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 8px;
+
+}
+footer a
+{
+	color:#999;
+}
+footer a:hover
+{
+	color:white;
+}

@@ -1,0 +1,210 @@
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CE PROGRAMME PERMET D'AFFICHER LE NOMBRE DE CLICK SUR UN BOUTON
+//
+HTML:
+<button>Cliquer ici</button>
+
+JAVASCRIPT:
+const button = document.querySelector('button');
+
+button.addEventListener('click', event => {
+  button.innerHTML = `Nombre de clics : ${event.detail}`;
+});
+//
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CE PROGRAMME SERT A COMPRENDRE COMMENT ON ENLEVE LE CLICK DROIT
+//
+HTML:
+<p id="noContextMenu">Le menu contextuel a été désactivé sur ce paragraphe.</p>
+<p>Mais pas sur celui-ci.</p>
+
+JAVASCRIPT:
+noContext = document.getElementById('noContextMenu');
+
+noContext.addEventListener('contextmenu', e => {
+  e.preventDefault();
+});
+//
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<COMMENT AGRANDIR UN TABLEAU PAR RAPPORT AU NOMBRE DE FOIS QUE LA SOURIS EST PASSER
+//
+HTML:
+<div id='mouseTarget'>
+ <ul id="unorderedList">
+  <li>Pas encore d'évènement !</li>
+ </ul>
+</div>
+
+CSS:
+#mouseTarget {
+  box-sizing: border-box;
+  width:15rem;
+  border:1px solid #333;
+}
+
+JAVASCRIPT:
+var enterEventCount = 0;
+var leaveEventCount = 0;
+const mouseTarget = document.getElementById('mouseTarget');
+const unorderedList = document.getElementById('unorderedList');
+
+mouseTarget.addEventListener('mouseenter', e => {
+  mouseTarget.style.border = '5px dotted orange';
+  enterEventCount++;
+  addListItem("Voici le nombre d'évènements mouseenter : " + enterEventCount + ".");
+});
+
+mouseTarget.addEventListener('mouseleave', e => {
+  mouseTarget.style.border = '1px solid #333';
+  leaveEventCount++;
+  addListItem("Voici le nombre d'évènements mouseleave : " + leaveEventCount + ".");
+});
+
+function addListItem(text) {
+  //  On crée un noeud texte avec le texte passé en argument
+  var newTextNode = document.createTextNode(text);
+
+  // On crée un nouvel élément li
+  var newListItem = document.createElement("li");
+
+  // On ajoute le noeud texte à l'élément li
+  newListItem.appendChild(newTextNode);
+
+  // On ajoute le nouvel élément à la liste
+  unorderedList.appendChild(newListItem);
+}
+
+//
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<PRATIQUER LE DESSIN DANS UN CANVAS
+//
+HTML:
+<h1>Dessiner grâce aux évènements de souris</h1>
+<canvas id="myPics" width="560" height="360"></canvas>
+
+CSS:
+canvas {
+  border: 1px solid black;
+  width: 560px;
+  height: 360px;
+}
+
+JAVASCRIPT:
+// Un booléen qui, lorsqu'il est vrai, indique que le déplacement de
+// la souris entraîne un dessin sur le canevas
+let isDrawing = false;
+let x = 0;
+let y = 0;
+
+const myPics = document.getElementById('myPics');
+const context = myPics.getContext('2d');
+
+// On récupère le décalage du canevas en x et y par rapport aux bords
+// de la page
+const rect = myPics.getBoundingClientRect();
+
+// On ajoute les gestionnaires d'évènements pour mousedown, mousemove
+// et mouseup
+myPics.addEventListener('mousedown', e => {
+  x = e.clientX - rect.left;
+  y = e.clientY - rect.top;
+  isDrawing = true;
+});
+
+myPics.addEventListener('mousemove', e => {
+  if (isDrawing === true) {
+    drawLine(context, x, y, e.clientX - rect.left, e.clientY - rect.top);
+    x = e.clientX - rect.left;
+    y = e.clientY - rect.top;
+  }
+});
+
+window.addEventListener('mouseup', e => {
+  if (isDrawing === true) {
+    drawLine(context, x, y, e.clientX - rect.left, e.clientY - rect.top);
+    x = 0;
+    y = 0;
+    isDrawing = false;
+  }
+});
+
+function drawLine(context, x1, y1, x2, y2) {
+  context.beginPath();
+  context.strokeStyle = 'black';
+  context.lineWidth = 1;
+  context.moveTo(x1, y1);
+  context.lineTo(x2, y2);
+  context.stroke();
+  context.closePath();
+}
+//
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CHANGER DE COULEUR UN TEXTE 
+
+HTML:
+<ul id="test">
+  <li>élément 1</li>
+  <li>élément 2</li>
+  <li>élément 3</li>
+</ul>
+
+JAVASCRIPT:
+let test = document.getElementById("test");
+
+// On affiche la liste en violet lorsque le curseur quitte
+// l'élément <ul>
+test.addEventListener("mouseleave", function( event ) {
+  // on cible la cible de mouseleave
+  event.target.style.color = "purple";
+
+  // on réinitialise la couleur après quelques instants
+  setTimeout(function() {
+    event.target.style.color = "";
+  }, 1000);
+}, false);
+
+// On affiche les éléments <li> en orange lorsque la souris
+// les quitte
+test.addEventListener("mouseout", function( event ) {
+  // on cible la cible de mouseout
+  event.target.style.color = "orange";
+
+ // on réinitialise la couleur après quelques instants
+  setTimeout(function() {
+    event.target.style.color = "";
+  }, 500);
+}, false);
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< AGRANDIR LA TAILLE D'UN OBJET OU D'UN TEXTE
+
+JAVASCRIPT:
+const card = document.querySelector('aside');
+
+card.addEventListener('dblclick', function (e) {
+  card.classList.toggle('large');
+});
+
+HMTL:
+<aside>
+  <h3>Une tuile</h3>
+  <p>Double-cliquer pour redimensionner cet objet.</p>
+</aside>
+
+CSS:
+aside {
+  background: #fe9;
+  border-radius: 1em;
+  display: inline-block;
+  padding: 1em;
+  transform: scale(.9);
+  transform-origin: 0 0;
+  transition: transform .6s;
+}
+
+.large {
+  transform: scale(1.3);
+}
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+VARIABLES IMAGES : "IMPOSSIBLE"

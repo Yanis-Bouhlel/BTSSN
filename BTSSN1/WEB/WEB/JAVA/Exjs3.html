@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice JS3 </title>
+    <style>
+        canvas {
+            background: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dessiner grâce aux évènements de souris</h1>
+    <button onclick="slide()"> HELLO WORLD </button>
+    <br>
+    <canvas id="myCanvas" width="600" height="500"
+        style="border:1px solid #d3d3d3 ; background-color: rgb(255, 255, 0)">
+    </canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        var raf;
+
+        var rect = {
+            x: 50,
+            y: 50,
+            vx: 5,
+            vy: 5,
+            radius: 50,
+            color: 'red',
+            slide: function () {
+                ctx.beginPath();
+                ctx.fillRect(this.x, this.y, this.radius, 50, 50);
+                ctx.closePath();
+                ctx.fillStyle = 'red';
+                ctx.fill();
+            }
+        };
+        function Color() {
+            var x = Math.floor(Math.random() * 256);
+            var y = Math.floor(Math.random() * 256);
+            var z = Math.floor(Math.random() * 256);
+            var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+            return bgColor;
+        }
+
+        function slide() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            rect.slide();
+            rect.x += rect.vx;
+            rect.y += rect.vy;
+            raf = window.requestAnimationFrame(slide);
+            if (rect.y + rect.vy +50> canvas.height || rect.y + rect.vy < 0) {
+                rect.vy = -rect.vy;
+                canvas.style.background = Color();
+            }
+            else if (rect.x + rect.vx + 50> canvas.width || rect.x + rect.vx < 0) {
+                rect.vx = -rect.vx;
+                canvas.style.background = Color();
+                ctx.fillStyle = Color() ;
+        }
+    }
+        rect.slide();
+    </script>
+</body>

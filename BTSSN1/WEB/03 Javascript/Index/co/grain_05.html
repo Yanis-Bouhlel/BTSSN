@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>4. Les structures de boucles [Module Web 2 sur 4&nbsp; (Javascript).]</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.103 / Opale 3.6.100">
+  <meta name="revision" content="2018-01-06 14:29">
+  <link rel="start" href="module_javascript.html" title="Module Web 2 sur 4&nbsp; (Javascript).">
+  <meta name="author" content>
+  <meta name="keywords" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"jc3g3x1m"};
+/*1*/ window.scLoadParams = {destUri:"/co/grain_05.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_searchMgr/searchMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_outMgr/outMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/JavaScript">
+outMgr.declareOutline("module_javascript.txt");
+	</script> </head>
+ <body class="default module expUc">
+  <div id="root"><header id="header" role="banner"><h1><span>Module Web 2 sur 4&nbsp; (Javascript).</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article expUc"><h2 class="hBk_ti"><span>4. Les structures de boucles</span></h2><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>La boucle While (r&eacute;p&eacute;ter Tant que)</p><p>Soit le code suivant :</p></div><div class="rBk res"><figure role="group" class="resInFlow png"><div class="resInFlow_co "><img src="../res/image_08.png" width="293" height="300" alt></div></figure></div><div class="rBk int"><div class="lnkDoc "><a class="dwnLnk odt " target="_blank" href="../res/Document8.odt" title="(nouvelle fen&ecirc;tre)"><span>Document8.odt [odt]</span></a></div></div><div class="rBk "><p><strong class="txt_emp_is ">a)</strong> Essayez ce code. Expliquez, en d&eacute;tail, ce qu'il fait.</p><p>Soit le code suivant :</p></div><div class="rBk res"><figure role="group" class="resInFlow png"><div class="resInFlow_co "><a href="../res/image_09.png" class="imgZoom" target="_blank" onclick="scImgMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fen&ecirc;tre)"><img src="../res/image_09_1.png" width="630" height="327" alt></a></div></figure></div><div class="rBk int"><div class="lnkDoc "><a class="dwnLnk odt " target="_blank" href="../res/Document9.odt" title="(nouvelle fen&ecirc;tre)"><span>Document9.odt [odt]</span></a></div></div><div class="rBk "><p><strong class="txt_emp_is ">b)</strong> Essayez ce code. Expliquez, en d&eacute;tail, ce qu'il fait notamment comment le programme sort de la boucle While.</p></div><div class="rBk "><p><strong class="txt_emp_is ">La boucle For</strong></p><p>Soit le code suivant :</p><p>c) Essayez ce code. Expliquez, en d&eacute;tail, ce qu'il fait.</p></div><div class="rBk res"><figure role="group" class="resInFlow png"><div class="resInFlow_co "><img src="../res/image_10.png" width="326" height="256" alt></div></figure></div><div class="rBk int"><div class="lnkDoc "><a class="dwnLnk odt " target="_blank" href="../res/Document10.odt" title="(nouvelle fen&ecirc;tre)"><span>Document10.odt [odt]</span></a></div></div><div class="rBk "><p><strong class="txt_emp_is ">c)</strong> Essayez ce code. Expliquez, en d&eacute;tail, ce qu'il fait.</p></div><div class="rBk res"><figure role="group" class="resInFlow png"><div class="resInFlow_co "><img src="../res/Screenshot-2017-10-25_I_Decouverte_des_structures___variables_et_de_quelques_fonctions_4_.png" width="389" height="69" alt></div></figure></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="grain_04.html" target="_self" class="btnNav prev" title="Pr&eacute;c&eacute;dent (3. Les structures de tests)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="grain_06.html" target="_self" class="btnNav next" title="Suivant (5. Les fonctions)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav id="menu" class="pageSelector" role="navigation" tabindex="-1" aria-label="menu principal"><hr class="hidden"><ul class="mnu static" data-totalPages="26"><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_javascript_1.html"><a href="module_javascript_1.html" target="_self" class="item"><span>Objectif</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_javascript_2.html"><a href="module_javascript_2.html" target="_self" class="item"><span>Apports th&eacute;oriques</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_javascript_3.html"><a href="module_javascript_3.html" target="_self" class="item" type="up"><span>S&eacute;quence 1&nbsp;: Initiation</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="grain.html"><a href="grain.html" target="_self" class="item"><span>Introduction</span></a></div></li><li class="sel_no anc_yes type_b  dpt_1 ueDiv"><div class="lbl type_b" id="module_javascript_6.html"><a href="module_javascript_6.html" target="_self" class="item" type="up"><span>D&eacute;couverte des structures , variables et de quelques fonctions</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_2 expUc"><div class="lbl type_l" id="grain_02.html"><a href="grain_02.html" target="_self" class="item"><span>1. La balise &laquo; script &raquo;</span></a></div></li><li class="sel_no anc_no type_l  dpt_2 expUc"><div class="lbl type_l" id="grain_03.html"><a href="grain_03.html" target="_self" class="item"><span>2. Les variables</span></a></div></li><li class="sel_no anc_no type_l  dpt_2 expUc"><div class="lbl type_l" id="grain_04.html"><a href="grain_04.html" target="_self" class="item"><span>3. Les structures de tests</span></a></div></li><li class="sel_yes anc_no type_l  dpt_2 expUc"><div class="lbl type_l" id="grain_05.html"><span class="item"><span>4. Les structures de boucles</span></span></div></li><li class="sel_no anc_no type_l  dpt_2 expUc"><div class="lbl type_l" id="grain_06.html"><a href="grain_06.html" target="_self" class="item"><span>5. Les fonctions</span></a></div></li><li class="sel_no anc_no type_l  dpt_2 expUc"><div class="lbl type_l" id="grain_07.html"><a href="grain_07.html" target="_self" class="item"><span>6. Le javascript externe</span></a></div></li></ul></li><li class="sel_no anc_no type_b  type_b_c dpt_1 ueDiv"><div class="lbl type_b" id="module_javascript_7.html"><a href="module_javascript_7.html" target="_self" class="item"><span>Des exemples d'utilisation dans une page web</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_1 ueDiv"><div class="lbl type_b" id="module_javascript_8.html"><a href="module_javascript_8.html" target="_self" class="item"><span>D'autres fonctions &agrave; travers des exemples</span></a></div></li></ul></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_javascript_4.html"><a href="module_javascript_4.html" target="_self" class="item"><span>S&eacute;quence 2&nbsp;: Modification sur la page contact.</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_javascript_5.html"><a href="module_javascript_5.html" target="_self" class="item"><span>S&eacute;quence 3&nbsp;: V&eacute;rification de formulaire</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden"><nav class="headingSelector" role="navigation"><ul class="mnu"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_javascript.html" target="_self" class="item" type="index" title="Page d'accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" role="contentinfo" tabindex="-1"><hr class="hidden"><a id="linkSp" target="_blank" href="https://www.scenari.org" title="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)"><span><img alt="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)" src="../skin/img/tpl/scBtn.png"></span></a></footer></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();outMgr.init();</script>
+ </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="utf-8" /> 
+    <title>premier programme!</title> 
+</head> 
+
+<body> 
+
+    <script> 
+       var etage = parseInt(prompt("Entrez l'étage où l'ascenseur doit se rendre (de -2 à 30) :")); //Transfome le résultat du prompt qui est un char en Entier
+
+       if (etage == 0) // Si le résultat du prompt est  0
+		{ 
+            alert('Vous vous trouvez déjà au rez-de-chaussée.'); // alors on affiche ce message
+		}
+		 else if (-2 <= etage && etage <= 30) //sinon si le résultat de prompt est compris entre -2 & 30
+		 	{ 
+                alert("Direction l'étage n°" + etage + ' !'); //Alors on vas vers l'étage de la valeur taper dans le prompt 																donc la variable etage
+           	} 
+			else //sinon 
+				{ 
+                alert("L'étage spécifié n'existe pas."); //on affiche étage spécifier n'existe pas garce à ça pas de plantage en cas de valeur incorrect
+               	} 
+
+    </script> 
+
+</body> 
+</html>

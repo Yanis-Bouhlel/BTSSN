@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title> S'inscrire </title>
+  <link rel="stylesheet" href="../style.css" type="text/css">
+  <!--<div id ="imageCAp">-->
+
+  <div id="social">
+    <a href="CAP.html"><img style="margin-bottom:0px; margin-left : 7%" src="..\..\images\2.png " alt="Terrain"
+        width="374" height="105  "></a>
+    <a href="https://fr-fr.facebook.com/parismarathon/>"><img p
+        style="margin-bottom: 25px; margin-left: 4% ; margin-right: 0%" src="..\..\images\capf.png " alt="FaceBook"
+        width="40" height="40"></a>
+    <a href="https://www.instagram.com/parismarathon/?hl=fr>"><img
+        style="margin-bottom: 25px; margin-left: 0px ; margin-right: 1%" src="..\..\images\capi.png " alt="Insta"
+        width="40" height="40"></a>
+    <a href="hhttps://mobile.twitter.com/Paris/status>"><img
+        style="margin-bottom: 25px; margin-left: 0px ; margin-right: 1%" src="..\..\images\capt.png " alt="Twitter"
+        width="40" height="40"></a>
+    <a href="https://www.youtube.com/watch?v=g5GjuRS9sVA>"><img
+        style="margin-bottom: 25px; margin-left: 0px ; margin-right: 2%" src="..\..\images\capy.png " alt="YouTube"
+        width="40" height="40"></a>
+    <a href="Connected.html"><img style="margin-bottom: 1%; margin-left: 5% ; margin-right: 0%"
+        src="..\..\images\MonAppli.png " alt="YouTube" width="70" height="65"></a>
+    <a href="../Mon_Compte.html"><img style="margin-bottom: 1%; margin-left: 20px ; margin-right: 0%"
+        src="..\..\images\Connexion.png " alt="YouTube" width="70" height="65"></a>
+    <a href="Inscription.html"><img style="margin-bottom: 1%; margin-left: 0% ; margin-right: 10%"
+        src="..\..\images\Sinscrire.png " alt="YouTube" width="70" height="65"></a>
+  </div>
+
+  <div class="header">
+    <nav>
+      <ul class="menu">
+        <li><a href="../CAP.html">Accueil</a></li>
+        <li><a href="../Boutique.html">Boutique</a></li>
+        <li><a href="../Mon_Compte.html">Mon Compte</a></li>
+        <li><a href="../plan.html">Plan de course</a></li>
+        <li><a href="../Contacts.html">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+</head>
+
+<body>
+  <div class="arriereplan">
+
+    <div class="box">
+      <form class="formBloc">
+
+        <h3><strong>S'inscrire</strong></h3>
+        <div class="formGroupe">
+          <label for="utilisateur">Nom d'utilisateur</label>
+          <input type="text" id="utilisateur" required maxlength="16">
+          <!--required pour recevoir un message d'erreur-->
+        </div>
+
+        <div class="formGroupe">
+          <label for="mdp">Mot de passe</label>
+          <input type="text" id="mdp" required maxlength="16">
+        </div>
+
+        <div class="formGroupe">
+          <label for="utilisateur">Verifiez le mot de passe</label>
+          <input type="text" id="utilisateur" required maxlength="16">
+          <!--required pour recevoir un message d'erreur-->
+        </div>
+
+        <div class="formGroupe">
+          <label id="save">Se souvenir de moi ?</label>
+          <input type="checkbox" id="javascript" value="">
+        </div>
+
+        <div class="formGroupe">
+          <input type="button" value="LOGIN" class="buttonSub" onclick="login()">
+        </div>
+
+
+
+
+        <script>
+
+          const inputs = document.querySelectorAll('input'); //constante ou il y a tout nos inputs
+
+          for (let i = 0; i < inputs.lenght; i++)
+
+            let field = inputs[i];//L'input selectionner
+          field.addEventListener('input', (e) => {  //Input etant un event donc lorsqu'on ecrit dessus
+
+            if (e.target.value != "") {    //si on ecrit alors animation (label disparait)
+              e.target.value.parentNode.classList.ad('animation');
+            }
+            else if (e.target.value == "") { //sinon on laisse le label si c'est une chaine de caractere vide
+              e.target.value.parentNode.classList.remove('animation');
+            }
+          })
+
+        </script>
+        <script src="Mon_compte.js"></script>
+</body>
+<!---->
+
+</html>
+
+<!--<input type="radio" id="html" name="fav_language" value="">
+        <label for="html">Mr</label>
+        </div><div id="formGroupe">
+        <input type="radio" id="css" name="fav_language" value="">
+        <label for="css">Mme</label>
+        </div><div id="formGroupe">
+        <input type="radio" id="javascript" name="fav_language" value="">
+        <label for="javascript">Mlle</label>
+      </div>-->

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Exercice d'auto-&eacute;valuation</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.101 / Opale 3.6.020">
+  <meta name="revision" content="2018-10-08 12:39">
+  <link rel="start" href="module_Sortie_Reseau.html" title="Comment un ordinateur surfe sur Internet&nbsp;?">
+  <meta name="author" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"jn0a9nv0"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_Sortie_Reseau_29.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+ </head>
+ <body class="subWin eval">
+  <div id="root"><header id="header" role="banner"><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article eval"><h2 class="hBk_ti"><span>Mod&egrave;le OSI</span></h2><div class="hBk_co "><script type="text/JavaScript">
+var Yl40qt5K8jzX7nVY92qLd_Aeval = {
+
+	fId : "Yl40qt5K8jzX7nVY92qLd",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "init" : {
+
+	this.refreshResult = function(pDisplay){
+		if(pDisplay) this.fResultDisplay = pDisplay;
+		if(this.fResultDisplay == "none") for(var i=this.fLabels.length -1; i >=0; i--)  scDragMgr.helpers.delClass(this.fLabels[i],"assmntResult_Right","assmntResult_Wrong");
+		else for(var i=this.fLabels.length -1; i >=0; i--) {
+			var vLabel = this.fLabels[i];
+
+			var vOldClass = (vLabel.sG == vLabel.rG ) ? "assmntResult_Wrong" : "assmntResult_Right";
+			var vNewClass = (vLabel.sG == vLabel.rG ) ? "assmntResult_Right" : "assmntResult_Wrong";
+
+			scDragMgr.helpers.switchClass(vLabel, vOldClass, vNewClass);
+		}
+	};
+var vLoadRespSession = "eval";
+
+		for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], true);
+		this.load(vLoadRespSession);
+		this.synch();
+	this.fResultDisplay = "none";
+
+scAssmntMgr.setMode(sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_N_"), "visible");
+this.fRespSession = "eval";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, this.fRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, this.fRespSession, "attempt");
+
+		this.computeScore = function() {
+
+		this.refreshScoresFeedbacks();
+		this.refreshResult();
+	}
+
+if(this.fRespSession != vLoadRespSession) this.saveResp(this.fRespSession);
+
+		this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+case "read" : {
+
+	this.refreshResult = function(pDisplay){
+		if(pDisplay) this.fResultDisplay = pDisplay;
+		if(this.fResultDisplay == "none") for(var i=this.fLabels.length -1; i >=0; i--)  scDragMgr.helpers.delClass(this.fLabels[i],"assmntResult_Right","assmntResult_Wrong");
+		else for(var i=this.fLabels.length -1; i >=0; i--) {
+			var vLabel = this.fLabels[i];
+
+			var vOldClass = (vLabel.sG == vLabel.rG ) ? "assmntResult_Wrong" : "assmntResult_Right";
+			var vNewClass = (vLabel.sG == vLabel.rG ) ? "assmntResult_Right" : "assmntResult_Wrong";
+
+			scDragMgr.helpers.switchClass(vLabel, vOldClass, vNewClass);
+		}
+	};
+var vLoadRespSession = "eval";
+
+		for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], false);
+		this.load(vLoadRespSession);
+		this.synch();
+	this.fResultDisplay = "none";
+
+scAssmntMgr.setMode(sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_N_"), "visible");
+this.fRespSession = null;
+
+		this.computeScore = function() {
+
+		this.refreshScoresFeedbacks();
+		this.refreshResult();
+	}
+
+
+		this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.Yl40qt5K8jzX7nVY92qLd_Aeval_form;
+		switch(this.fCurSeq) {
+case "init" : {
+		this.refreshResult("none");
+
+		break;
+	}
+case "read" : {
+		this.refreshResult("none");
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(scServices.assmntMgr.getCompletionStatus(this.fId, "eval") != "complete" && true) return "init";
+	return "read";
+	},
+
+	saveResp:function(pSession){
+		if(pSession==null) return;
+		var vLabel = this.fLabels[0];
+		var vStr = "[{g:" + vLabel.rG + ",offs:" + vLabel.rO + "," + scDragMgr.saveLabelPos(vLabel) + "}";
+		for(var i=1, len=this.fLabels.length; i < len; i++) {
+			vLabel = this.fLabels[i];
+			vStr += ",{g:" + vLabel.rG + ",offs:" + vLabel.rO + "," + scDragMgr.saveLabelPos(vLabel) + "}";
+		}
+		vStr+="]";
+		scServices.assmntMgr.setResponse(this.fId, pSession, "pos", vStr);
+	},
+	load:function(pSession){
+		var vStr = (pSession!=null) ? scServices.assmntMgr.getResponse(this.fId, pSession, "pos") : null;
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			for(var j=vGroup.length-1; j >=0; j--) vGroup[j].labelsToAdd = [];
+		}
+		if(vStr) {
+						var vList = eval(vStr);
+			for(var i=0, len=this.fLabels.length; i < len; i++) {
+				var vLabelToAdd = vList[i];
+				vLabelToAdd.label = this.fLabels[i];
+				var vGroupC = this.fGroupsC[vLabelToAdd.g];
+				if(vGroupC.length == 1) vGroupC[0].labelsToAdd[vLabelToAdd.offs] = vLabelToAdd; 
+				else vGroupC[vLabelToAdd.offs].labelsToAdd.push(vLabelToAdd);
+			}
+		} else {
+						var vBasketC = this.fGroupsC[0];
+
+			for(var i=vBasketC.length-1; i >=0; i--) for(var j=0, vLen=vBasketC[i]._Labels.length; j < vLen; j++) vBasketC[i].labelsToAdd.push({label:vBasketC[i]._Labels[j]});
+
+		}
+		scDragMgr.repopulateContainers("Yl40qt5K8jzX7nVY92qLd_Aeval");
+	},
+	synch:function(){
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			var vOffset = 0;
+			for(var j=0, vLenJ=vGroup.length; j < vLenJ; j++) {
+				var vItems = scDragMgr.getLabels(vGroup[j]);
+				var vLenK = vItems.length;
+								if(vLenK == 0) vOffset++;
+				else for(var k=0; k < vLenK; k++) {
+					vItems[k].rG = i;
+					vItems[k].rO = vOffset++;
+				}
+			}
+		}
+	},
+	refreshScoresFeedbacks : function(){
+
+	},
+	onLoad: function(){
+	try{
+		var onChange = function() {
+Yl40qt5K8jzX7nVY92qLd_Aeval.synch();
+Yl40qt5K8jzX7nVY92qLd_Aeval.computeScore();
+Yl40qt5K8jzX7nVY92qLd_Aeval.saveResp(Yl40qt5K8jzX7nVY92qLd_Aeval.fRespSession);
+			scServices.assmntMgr.commit();
+		}
+		this.fLabels = [];
+		var vLabel, vC;
+scDragMgr.makeContainer("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_S_N4d"), vC = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_S_N4f"), sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_S_N5a")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddBasketDragOver');
+vLabel = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_LN8f0");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("Yl40qt5K8jzX7nVY92qLd_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_LN911");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=2;
+scDragMgr.makeDraggableLabel("Yl40qt5K8jzX7nVY92qLd_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_LN932");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=3;
+scDragMgr.makeDraggableLabel("Yl40qt5K8jzX7nVY92qLd_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_LN953");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=4;
+scDragMgr.makeDraggableLabel("Yl40qt5K8jzX7nVY92qLd_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_LN974");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=5;
+scDragMgr.makeDraggableLabel("Yl40qt5K8jzX7nVY92qLd_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_LN995");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=6;
+scDragMgr.makeDraggableLabel("Yl40qt5K8jzX7nVY92qLd_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_LN9b6");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=7;
+scDragMgr.makeDraggableLabel("Yl40qt5K8jzX7nVY92qLd_Aeval", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+scDragMgr.makeContainer("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN6d_N8df"), vC = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN74_N8df"), sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN76_N8df")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN6d_N900"), vC = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN74_N900"), sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN76_N900")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN6d_N921"), vC = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN74_N921"), sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN76_N921")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN6d_N942"), vC = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN74_N942"), sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN76_N942")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN6d_N963"), vC = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN74_N963"), sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN76_N963")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN6d_N984"), vC = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN74_N984"), sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN76_N984")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN6d_N9a5"), vC = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN74_N9a5"), sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_NN76_N9a5")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+this.fGroupsC = [scDragMgr.getContainers("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_L")),scDragMgr.getContainers("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_RN8df")),scDragMgr.getContainers("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_RN900")),scDragMgr.getContainers("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_RN921")),scDragMgr.getContainers("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_RN942")),scDragMgr.getContainers("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_RN963")),scDragMgr.getContainers("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_RN984")),scDragMgr.getContainers("Yl40qt5K8jzX7nVY92qLd_Aeval", sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_RN9a5"))];
+		for(var i = this.fGroupsC[0].length-1; i >=0; i--) this.fGroupsC[0][i]._Labels = scDragMgr.getLabels(this.fGroupsC[0][i]);
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("Yl40qt5K8jzX7nVY92qLd_Aeval_A");
+		vNodeRoot.style.display = "block"; 
+	}catch(e){console.log(e);}
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = Yl40qt5K8jzX7nVY92qLd_Aeval;
+scOnUnloads[scOnUnloads.length] = Yl40qt5K8jzX7nVY92qLd_Aeval;
+</script><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_A" style="display:none;"><div class="evalBody"><div class="question"></div><div class="response" aria-live="polite"><table id="Yl40qt5K8jzX7nVY92qLd_Aeval_N_" class="mtTable"><tr><td class="mtTdBasket"><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_L" class="ddBasket "><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_S_N4d" class="ddBasketCatch "><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_S_N4f" class="ddBasketCont "><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_LN953" class="mtLabel "><p>Couche transport</p></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_LN974" class="mtLabel "><p>Couche session</p></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_LN9b6" class="mtLabel "><p>Couche application</p></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_LN995" class="mtLabel "><p>Couche pr&eacute;sentation</p></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_LN932" class="mtLabel "><p>Couche r&eacute;seau</p></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_LN911" class="mtLabel "><p>Couche liaison de donn&eacute;es</p></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_LN8f0" class="mtLabel "><p>Couche physique</p></div></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_S_N5a" class="ddBasketIfEmpty "><span>Plus d'&eacute;l&eacute;ments &agrave; cat&eacute;goriser</span></div><div class="ddBasketEnd"></div></div></div></td><td class="mtTdArrow"></td><td class="mtTdDropCont"><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_RN8df" class="ddRepArea "><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN6d_N8df" class="ddDropCatch "><div class="ddDropTi"><p>Couche 1</p></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN74_N8df" class="ddDropCont "></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN76_N8df" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_RN900" class="ddRepArea "><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN6d_N900" class="ddDropCatch "><div class="ddDropTi"><p>Couche 2</p></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN74_N900" class="ddDropCont "></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN76_N900" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_RN921" class="ddRepArea "><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN6d_N921" class="ddDropCatch "><div class="ddDropTi"><p>Couche 3</p></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN74_N921" class="ddDropCont "></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN76_N921" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_RN942" class="ddRepArea "><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN6d_N942" class="ddDropCatch "><div class="ddDropTi"><p>Couche 4</p></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN74_N942" class="ddDropCont "></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN76_N942" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_RN963" class="ddRepArea "><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN6d_N963" class="ddDropCatch "><div class="ddDropTi"><p>Couche 5</p></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN74_N963" class="ddDropCont "></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN76_N963" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_RN984" class="ddRepArea "><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN6d_N984" class="ddDropCatch "><div class="ddDropTi"><p>Couche 6</p></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN74_N984" class="ddDropCont "></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN76_N984" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_RN9a5" class="ddRepArea "><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN6d_N9a5" class="ddDropCatch "><div class="ddDropTi"><p>Couche 7</p></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN74_N9a5" class="ddDropCont "></div><div id="Yl40qt5K8jzX7nVY92qLd_Aeval_NN76_N9a5" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div></td></tr></table></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><span class="evalCounter"><span class="seen">1</span><span class="over">/</span><span class="total">4</span></span><nav class="pageTurner" role="navigation"><ul><li><a rel="next" href="module_Sortie_Reseau_31.html" target="_self" class="btnNav nextEval" title="Suivant (Exercice d'auto-&eacute;valuation)"><span>Suivant</span></a></li></ul></nav></div></div></main></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer");scImgMgr.init();</script>
+ </body>
+</html>

@@ -1,0 +1,14 @@
+Bienvenue, 
+Vous verrez dans ce fichier : 
+<<<<<<< Updated upstream
+   La phrase a crypter est : football
+   La phrase crypter est : rrghzuul
+=======
+<<<<<<< HEAD
+   La phrase a décoder est : guctjr gvkvgr cN
+   La phrase décrypter est : Kz odshsd ogqzrd
+=======
+   La phrase a crypter est : football
+   La phrase crypter est : rrghzuul
+>>>>>>> 03633f35a3ccfddd490ddd8bd7e73fcdfb42affb
+>>>>>>> Stashed changes

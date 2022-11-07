@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Exercices&nbsp;: D&eacute;termination du masque [La configuration r&eacute;seau]</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.103 / Opale 3.6.100">
+  <meta name="revision" content="2020-10-13 07:17">
+  <link rel="start" href="module_La_configuration_reseau.html" title="La configuration r&eacute;seau">
+  <meta name="author" content>
+  <meta name="keywords" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"kg7munl6"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_La_configuration_reseau_24.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_searchMgr/searchMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_outMgr/outMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/JavaScript">
+outMgr.declareOutline("module_La_configuration_reseau.txt");
+	</script> </head>
+ <body class="default module coQuiz">
+  <div id="root"><header id="header" role="banner"><h1><span>La configuration r&eacute;seau</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk quiz article coQuiz"><h2 class="hBk_ti"><span>Exercices&nbsp;: D&eacute;termination du masque</span></h2><div class="hBk_co"><script type="text/JavaScript">
+var edCDtWkLVAeF2vGQ9ZqIyi = {
+
+	fId : "edCDtWkLVAeF2vGQ9ZqIyi",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+scAssmntMgr.setMode(sc$("edCDtWkLVAeF2vGQ9ZqIyi_N_score"), "invisible");
+scAssmntMgr.setToggleStatus(sc$("edCDtWkLVAeF2vGQ9ZqIyi_S_N35"), false);
+
+		this.computeScore = function(pInput, pIdx) {
+			this.fMinPts = 0;
+			this.fMaxPts = 0;
+			this.fScorePts = 0;
+			var vRate;
+
+		var vSubAssmnt = {fSession:"", compute:function(pParent, pId, pRate){
+			this.fMinPts = scServices.assmntMgr.getMinPts(pId, this.fSession)||0;
+			this.fScorePts = scServices.assmntMgr.getScorePts(pId, this.fSession)||0;
+			this.fMaxPts = scServices.assmntMgr.getMaxPts(pId, this.fSession)||1;
+
+			pParent.fMinPts += this.fMinPts;
+			pParent.fScorePts += this.fScorePts;
+			pParent.fMaxPts += this.fMaxPts;
+		}};
+
+		vSubAssmnt.compute(this, "fWB6hLngcYdnQj3xJzDktc", 1);
+
+		vSubAssmnt.compute(this, "lu18hDdS6hN9tbdoxn82", 1);
+
+		vSubAssmnt.compute(this, "d4mtziC2Y9iZQo37sLTFKg", 1);
+
+		if(this.fMaxPts < 100) {
+
+				this.fScorePts = this.fMinPts + (this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * (100-this.fMinPts); 
+
+			this.fMaxPts = 100;
+		}
+var vScoreSession = "";
+			scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+						this.refreshScoresFeedbacks();
+		}
+
+		this.handleAssmntPts = function(pEvent){if(pEvent.fId=="fWB6hLngcYdnQj3xJzDktc" || pEvent.fId=="lu18hDdS6hN9tbdoxn82" || pEvent.fId=="d4mtziC2Y9iZQo37sLTFKg" || false) this.computeScore();}
+		scServices.assmntMgr.addEventListener(this);
+		this.computeScore();
+
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	onActionN57 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+fWB6hLngcYdnQj3xJzDktc_Alist.fct_reset(); 
+lu18hDdS6hN9tbdoxn82_Alist.fct_reset(); 
+d4mtziC2Y9iZQo37sLTFKg_Alist.fct_reset(); 
+this.initSeq("play");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionN35 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+		var vIsOn = scAssmntMgr.isToggleOn(pButton);
+		if(vIsOn) {
+fWB6hLngcYdnQj3xJzDktc_Alist.fct_play(); 
+lu18hDdS6hN9tbdoxn82_Alist.fct_play(); 
+d4mtziC2Y9iZQo37sLTFKg_Alist.fct_play(); 
+scAssmntMgr.setMode(sc$("edCDtWkLVAeF2vGQ9ZqIyi_N_score"), "invisible");
+
+		} else {
+fWB6hLngcYdnQj3xJzDktc_Alist.fct_displaySol(); 
+lu18hDdS6hN9tbdoxn82_Alist.fct_displaySol(); 
+d4mtziC2Y9iZQo37sLTFKg_Alist.fct_displaySol(); 
+scAssmntMgr.setMode(sc$("edCDtWkLVAeF2vGQ9ZqIyi_N_score"), "visible");
+
+		}
+		scAssmntMgr.setToggleStatus(pButton, ! vIsOn);
+		scServices.assmntMgr.commit();
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.edCDtWkLVAeF2vGQ9ZqIyi_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		scServices.assmntMgr.removeEventListener(this);
+		this.computeScore();
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "play";
+	},
+
+	
+	refreshScoresFeedbacks : function(){
+
+		var vScoreNode = sc$("edCDtWkLVAeF2vGQ9ZqIyi_SN73");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("edCDtWkLVAeF2vGQ9ZqIyi_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "B",
+	unloadSortKey: "B"
+};
+
+scOnLoads[scOnLoads.length] = edCDtWkLVAeF2vGQ9ZqIyi;
+scOnUnloads[scOnUnloads.length] = edCDtWkLVAeF2vGQ9ZqIyi;
+</script><div id="edCDtWkLVAeF2vGQ9ZqIyi_A" style="display:none;"><div class="quizBody"><div class="subQuiz "><h3 class="subQuiz_ti"><span>Exercice</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var fWB6hLngcYdnQj3xJzDktc_Alist = {
+
+	fId : "fWB6hLngcYdnQj3xJzDktc",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "play" : {
+		var vForm = document.forms.fWB6hLngcYdnQj3xJzDktc_Alist_form;
+		for (var i=0; i < vForm.fWB6hLngcYdnQj3xJzDktc_Alist_input.length; i++) {
+			vForm.fWB6hLngcYdnQj3xJzDktc_Alist_input[i].disabled = false;
+			vForm.fWB6hLngcYdnQj3xJzDktc_Alist_input[i].checked = false;
+		}
+
+var vLoadRespSession = "";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("fWB6hLngcYdnQj3xJzDktc_Alist_in"+vResp).checked = true;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("fWB6hLngcYdnQj3xJzDktc_Alist_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("fWB6hLngcYdnQj3xJzDktc_Alist_N_responseTi"), "invisible");
+scAssmntMgr.setMode(sc$("fWB6hLngcYdnQj3xJzDktc_Alist_N0_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("fWB6hLngcYdnQj3xJzDktc_Alist_N1_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("fWB6hLngcYdnQj3xJzDktc_Alist_N2_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("fWB6hLngcYdnQj3xJzDktc_Alist_N_score"), "invisible");
+var vRespSession = "";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput, pIdx) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", pIdx);
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}				
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.fWB6hLngcYdnQj3xJzDktc_Alist_form.fWB6hLngcYdnQj3xJzDktc_Alist_input[1].checked ?  this.fMaxPts : this.fMinPts;
+
+				this.fScorePts = 0 + (this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * (1 - 0); 
+
+			this.fMinPts = 0;
+
+			this.fMaxPts = 1;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for(var i = 0; i < vForm.fWB6hLngcYdnQj3xJzDktc_Alist_input.length; i++) if(vForm.fWB6hLngcYdnQj3xJzDktc_Alist_input[i].checked) break;
+		scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", (i < vForm.fWB6hLngcYdnQj3xJzDktc_Alist_input.length) ? vForm.fWB6hLngcYdnQj3xJzDktc_Alist_input[i].value : null);
+}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_play : function(){
+this.initSeq("play");
+
+	},
+	fct_displaySol : function(){
+var vForm=document.forms.fWB6hLngcYdnQj3xJzDktc_Alist_form; for (var i=0; i < vForm.fWB6hLngcYdnQj3xJzDktc_Alist_input.length; i++) vForm.fWB6hLngcYdnQj3xJzDktc_Alist_input[i].disabled = true; this.setSolution(true); scAssmntMgr.setMode(sc$("fWB6hLngcYdnQj3xJzDktc_Alist_N_globalExp"), "visible");
+scAssmntMgr.setMode(sc$("fWB6hLngcYdnQj3xJzDktc_Alist_N0_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("fWB6hLngcYdnQj3xJzDktc_Alist_N1_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("fWB6hLngcYdnQj3xJzDktc_Alist_N2_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("fWB6hLngcYdnQj3xJzDktc_Alist_N_score"), "visible");
+scAssmntMgr.setMode(sc$("fWB6hLngcYdnQj3xJzDktc_Alist_N_responseTi"), "visible");
+
+	},
+	fct_reset : function(){
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.fWB6hLngcYdnQj3xJzDktc_Alist_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "play";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("fWB6hLngcYdnQj3xJzDktc_Alist_SNa4");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.fWB6hLngcYdnQj3xJzDktc_Alist_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+				var vSol = vForm.fWB6hLngcYdnQj3xJzDktc_Alist_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "collapsed");
+				vSol.checked = false;
+				vForm.fWB6hLngcYdnQj3xJzDktc_Alist_input[i].removeAttribute("aria-hidden");
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 2 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+				var vSol = vForm.fWB6hLngcYdnQj3xJzDktc_Alist_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "visible");
+				vSol.checked = (i+1 == 2);
+				vForm.fWB6hLngcYdnQj3xJzDktc_Alist_input[i].setAttribute("aria-hidden", "true");
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("fWB6hLngcYdnQj3xJzDktc_Alist_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = fWB6hLngcYdnQj3xJzDktc_Alist;
+scOnUnloads[scOnUnloads.length] = fWB6hLngcYdnQj3xJzDktc_Alist;
+</script><div id="fWB6hLngcYdnQj3xJzDktc_Alist_A" style="display:none;"><div class="quizBody"><div class="question"><div class="rBk "><p>Soit l'adresse d'une machine 189.56.234.17, quel est le masque r&eacute;seau correspondant&nbsp;?</p></div></div><div class="response" aria-live="polite"><h4 id="fWB6hLngcYdnQj3xJzDktc_Alist_N_responseTi" class="response_ti"><span aria-hidden="true"><span>Votre choix</span></span><span><span>Choix attendu</span></span><span aria-hidden="true"><span>R&eacute;ponse</span></span></h4><form action name="fWB6hLngcYdnQj3xJzDktc_Alist_form" id="fWB6hLngcYdnQj3xJzDktc_Alist_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="fWB6hLngcYdnQj3xJzDktc_Alist_input" id="fWB6hLngcYdnQj3xJzDktc_Alist_in0" value="0" onclick="fWB6hLngcYdnQj3xJzDktc_Alist.setResp(this, 0);" aria-labelledby="fWB6hLngcYdnQj3xJzDktc_Alist_lbl0"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="fWB6hLngcYdnQj3xJzDktc_Alist_sol" id="fWB6hLngcYdnQj3xJzDktc_Alist_sol0" value disabled aria-labelledby="fWB6hLngcYdnQj3xJzDktc_Alist_lbl0"></div><div class="choiceList_la " id="fWB6hLngcYdnQj3xJzDktc_Alist_lbl0"><div class="choice"><div class="label"><p>255.0.0.0</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="fWB6hLngcYdnQj3xJzDktc_Alist_input" id="fWB6hLngcYdnQj3xJzDktc_Alist_in1" value="1" onclick="fWB6hLngcYdnQj3xJzDktc_Alist.setResp(this, 1);" aria-labelledby="fWB6hLngcYdnQj3xJzDktc_Alist_lbl1"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="fWB6hLngcYdnQj3xJzDktc_Alist_sol" id="fWB6hLngcYdnQj3xJzDktc_Alist_sol1" value disabled aria-labelledby="fWB6hLngcYdnQj3xJzDktc_Alist_lbl1"></div><div class="choiceList_la " id="fWB6hLngcYdnQj3xJzDktc_Alist_lbl1"><div class="choice"><div class="label"><p>255.255.0.0</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="fWB6hLngcYdnQj3xJzDktc_Alist_input" id="fWB6hLngcYdnQj3xJzDktc_Alist_in2" value="2" onclick="fWB6hLngcYdnQj3xJzDktc_Alist.setResp(this, 2);" aria-labelledby="fWB6hLngcYdnQj3xJzDktc_Alist_lbl2"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="fWB6hLngcYdnQj3xJzDktc_Alist_sol" id="fWB6hLngcYdnQj3xJzDktc_Alist_sol2" value disabled aria-labelledby="fWB6hLngcYdnQj3xJzDktc_Alist_lbl2"></div><div class="choiceList_la " id="fWB6hLngcYdnQj3xJzDktc_Alist_lbl2"><div class="choice"><div class="label"><p>255.255.255.0</p></div></div></div></li></ul></form></div><div class="toolbar"><span class="scoreBox"><span class="score " aria-live="polite" id="fWB6hLngcYdnQj3xJzDktc_Alist_N_score"><span id="fWB6hLngcYdnQj3xJzDktc_Alist_SNa4"><span></span></span></span></span></div></div></div></div></div><div class="subQuiz "><h3 class="subQuiz_ti"><span>Exercice</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var lu18hDdS6hN9tbdoxn82_Alist = {
+
+	fId : "lu18hDdS6hN9tbdoxn82",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "play" : {
+		var vForm = document.forms.lu18hDdS6hN9tbdoxn82_Alist_form;
+		for (var i=0; i < vForm.lu18hDdS6hN9tbdoxn82_Alist_input.length; i++) {
+			vForm.lu18hDdS6hN9tbdoxn82_Alist_input[i].disabled = false;
+			vForm.lu18hDdS6hN9tbdoxn82_Alist_input[i].checked = false;
+		}
+
+var vLoadRespSession = "";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("lu18hDdS6hN9tbdoxn82_Alist_in"+vResp).checked = true;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("lu18hDdS6hN9tbdoxn82_Alist_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("lu18hDdS6hN9tbdoxn82_Alist_N_responseTi"), "invisible");
+scAssmntMgr.setMode(sc$("lu18hDdS6hN9tbdoxn82_Alist_N0_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("lu18hDdS6hN9tbdoxn82_Alist_N1_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("lu18hDdS6hN9tbdoxn82_Alist_N2_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("lu18hDdS6hN9tbdoxn82_Alist_N_score"), "invisible");
+var vRespSession = "";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput, pIdx) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", pIdx);
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}				
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.lu18hDdS6hN9tbdoxn82_Alist_form.lu18hDdS6hN9tbdoxn82_Alist_input[0].checked ?  this.fMaxPts : this.fMinPts;
+
+				this.fScorePts = 0 + (this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * (1 - 0); 
+
+			this.fMinPts = 0;
+
+			this.fMaxPts = 1;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for(var i = 0; i < vForm.lu18hDdS6hN9tbdoxn82_Alist_input.length; i++) if(vForm.lu18hDdS6hN9tbdoxn82_Alist_input[i].checked) break;
+		scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", (i < vForm.lu18hDdS6hN9tbdoxn82_Alist_input.length) ? vForm.lu18hDdS6hN9tbdoxn82_Alist_input[i].value : null);
+}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_play : function(){
+this.initSeq("play");
+
+	},
+	fct_displaySol : function(){
+var vForm=document.forms.lu18hDdS6hN9tbdoxn82_Alist_form; for (var i=0; i < vForm.lu18hDdS6hN9tbdoxn82_Alist_input.length; i++) vForm.lu18hDdS6hN9tbdoxn82_Alist_input[i].disabled = true; this.setSolution(true); scAssmntMgr.setMode(sc$("lu18hDdS6hN9tbdoxn82_Alist_N_globalExp"), "visible");
+scAssmntMgr.setMode(sc$("lu18hDdS6hN9tbdoxn82_Alist_N0_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("lu18hDdS6hN9tbdoxn82_Alist_N1_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("lu18hDdS6hN9tbdoxn82_Alist_N2_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("lu18hDdS6hN9tbdoxn82_Alist_N_score"), "visible");
+scAssmntMgr.setMode(sc$("lu18hDdS6hN9tbdoxn82_Alist_N_responseTi"), "visible");
+
+	},
+	fct_reset : function(){
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.lu18hDdS6hN9tbdoxn82_Alist_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "play";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("lu18hDdS6hN9tbdoxn82_Alist_SNa4");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.lu18hDdS6hN9tbdoxn82_Alist_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+				var vSol = vForm.lu18hDdS6hN9tbdoxn82_Alist_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "collapsed");
+				vSol.checked = false;
+				vForm.lu18hDdS6hN9tbdoxn82_Alist_input[i].removeAttribute("aria-hidden");
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 1 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+				var vSol = vForm.lu18hDdS6hN9tbdoxn82_Alist_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "visible");
+				vSol.checked = (i+1 == 1);
+				vForm.lu18hDdS6hN9tbdoxn82_Alist_input[i].setAttribute("aria-hidden", "true");
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("lu18hDdS6hN9tbdoxn82_Alist_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = lu18hDdS6hN9tbdoxn82_Alist;
+scOnUnloads[scOnUnloads.length] = lu18hDdS6hN9tbdoxn82_Alist;
+</script><div id="lu18hDdS6hN9tbdoxn82_Alist_A" style="display:none;"><div class="quizBody"><div class="question"><div class="rBk "><p>Soit l'adresse d'une machine 78.36.174.95, quel est le masque r&eacute;seau correspondant&nbsp;?</p></div></div><div class="response" aria-live="polite"><h4 id="lu18hDdS6hN9tbdoxn82_Alist_N_responseTi" class="response_ti"><span aria-hidden="true"><span>Votre choix</span></span><span><span>Choix attendu</span></span><span aria-hidden="true"><span>R&eacute;ponse</span></span></h4><form action name="lu18hDdS6hN9tbdoxn82_Alist_form" id="lu18hDdS6hN9tbdoxn82_Alist_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="lu18hDdS6hN9tbdoxn82_Alist_input" id="lu18hDdS6hN9tbdoxn82_Alist_in0" value="0" onclick="lu18hDdS6hN9tbdoxn82_Alist.setResp(this, 0);" aria-labelledby="lu18hDdS6hN9tbdoxn82_Alist_lbl0"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="lu18hDdS6hN9tbdoxn82_Alist_sol" id="lu18hDdS6hN9tbdoxn82_Alist_sol0" value disabled aria-labelledby="lu18hDdS6hN9tbdoxn82_Alist_lbl0"></div><div class="choiceList_la " id="lu18hDdS6hN9tbdoxn82_Alist_lbl0"><div class="choice"><div class="label"><p>255.0.0.0</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="lu18hDdS6hN9tbdoxn82_Alist_input" id="lu18hDdS6hN9tbdoxn82_Alist_in1" value="1" onclick="lu18hDdS6hN9tbdoxn82_Alist.setResp(this, 1);" aria-labelledby="lu18hDdS6hN9tbdoxn82_Alist_lbl1"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="lu18hDdS6hN9tbdoxn82_Alist_sol" id="lu18hDdS6hN9tbdoxn82_Alist_sol1" value disabled aria-labelledby="lu18hDdS6hN9tbdoxn82_Alist_lbl1"></div><div class="choiceList_la " id="lu18hDdS6hN9tbdoxn82_Alist_lbl1"><div class="choice"><div class="label"><p>255.255.0.0</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="lu18hDdS6hN9tbdoxn82_Alist_input" id="lu18hDdS6hN9tbdoxn82_Alist_in2" value="2" onclick="lu18hDdS6hN9tbdoxn82_Alist.setResp(this, 2);" aria-labelledby="lu18hDdS6hN9tbdoxn82_Alist_lbl2"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="lu18hDdS6hN9tbdoxn82_Alist_sol" id="lu18hDdS6hN9tbdoxn82_Alist_sol2" value disabled aria-labelledby="lu18hDdS6hN9tbdoxn82_Alist_lbl2"></div><div class="choiceList_la " id="lu18hDdS6hN9tbdoxn82_Alist_lbl2"><div class="choice"><div class="label"><p>255.255.255.0</p></div></div></div></li></ul></form></div><div class="toolbar"><span class="scoreBox"><span class="score " aria-live="polite" id="lu18hDdS6hN9tbdoxn82_Alist_N_score"><span id="lu18hDdS6hN9tbdoxn82_Alist_SNa4"><span></span></span></span></span></div></div></div></div></div><div class="subQuiz "><h3 class="subQuiz_ti"><span>Exercice</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var d4mtziC2Y9iZQo37sLTFKg_Alist = {
+
+	fId : "d4mtziC2Y9iZQo37sLTFKg",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "play" : {
+		var vForm = document.forms.d4mtziC2Y9iZQo37sLTFKg_Alist_form;
+		for (var i=0; i < vForm.d4mtziC2Y9iZQo37sLTFKg_Alist_input.length; i++) {
+			vForm.d4mtziC2Y9iZQo37sLTFKg_Alist_input[i].disabled = false;
+			vForm.d4mtziC2Y9iZQo37sLTFKg_Alist_input[i].checked = false;
+		}
+
+var vLoadRespSession = "";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_in"+vResp).checked = true;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_N_responseTi"), "invisible");
+scAssmntMgr.setMode(sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_N0_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_N1_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_N2_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_N_score"), "invisible");
+var vRespSession = "";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput, pIdx) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", pIdx);
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}				
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.d4mtziC2Y9iZQo37sLTFKg_Alist_form.d4mtziC2Y9iZQo37sLTFKg_Alist_input[2].checked ?  this.fMaxPts : this.fMinPts;
+
+				this.fScorePts = 0 + (this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * (1 - 0); 
+
+			this.fMinPts = 0;
+
+			this.fMaxPts = 1;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for(var i = 0; i < vForm.d4mtziC2Y9iZQo37sLTFKg_Alist_input.length; i++) if(vForm.d4mtziC2Y9iZQo37sLTFKg_Alist_input[i].checked) break;
+		scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", (i < vForm.d4mtziC2Y9iZQo37sLTFKg_Alist_input.length) ? vForm.d4mtziC2Y9iZQo37sLTFKg_Alist_input[i].value : null);
+}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_play : function(){
+this.initSeq("play");
+
+	},
+	fct_displaySol : function(){
+var vForm=document.forms.d4mtziC2Y9iZQo37sLTFKg_Alist_form; for (var i=0; i < vForm.d4mtziC2Y9iZQo37sLTFKg_Alist_input.length; i++) vForm.d4mtziC2Y9iZQo37sLTFKg_Alist_input[i].disabled = true; this.setSolution(true); scAssmntMgr.setMode(sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_N_globalExp"), "visible");
+scAssmntMgr.setMode(sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_N0_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_N1_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_N2_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_N_score"), "visible");
+scAssmntMgr.setMode(sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_N_responseTi"), "visible");
+
+	},
+	fct_reset : function(){
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.d4mtziC2Y9iZQo37sLTFKg_Alist_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "play";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_SNa4");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.d4mtziC2Y9iZQo37sLTFKg_Alist_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+				var vSol = vForm.d4mtziC2Y9iZQo37sLTFKg_Alist_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "collapsed");
+				vSol.checked = false;
+				vForm.d4mtziC2Y9iZQo37sLTFKg_Alist_input[i].removeAttribute("aria-hidden");
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+				var vSol = vForm.d4mtziC2Y9iZQo37sLTFKg_Alist_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "visible");
+				vSol.checked = (i+1 == 3);
+				vForm.d4mtziC2Y9iZQo37sLTFKg_Alist_input[i].setAttribute("aria-hidden", "true");
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("d4mtziC2Y9iZQo37sLTFKg_Alist_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = d4mtziC2Y9iZQo37sLTFKg_Alist;
+scOnUnloads[scOnUnloads.length] = d4mtziC2Y9iZQo37sLTFKg_Alist;
+</script><div id="d4mtziC2Y9iZQo37sLTFKg_Alist_A" style="display:none;"><div class="quizBody"><div class="question"><div class="rBk "><p>Soit l'adresse d'une machine 199.46.184.206, quel est le masque r&eacute;seau correspondant&nbsp;?</p></div></div><div class="response" aria-live="polite"><h4 id="d4mtziC2Y9iZQo37sLTFKg_Alist_N_responseTi" class="response_ti"><span aria-hidden="true"><span>Votre choix</span></span><span><span>Choix attendu</span></span><span aria-hidden="true"><span>R&eacute;ponse</span></span></h4><form action name="d4mtziC2Y9iZQo37sLTFKg_Alist_form" id="d4mtziC2Y9iZQo37sLTFKg_Alist_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="d4mtziC2Y9iZQo37sLTFKg_Alist_input" id="d4mtziC2Y9iZQo37sLTFKg_Alist_in0" value="0" onclick="d4mtziC2Y9iZQo37sLTFKg_Alist.setResp(this, 0);" aria-labelledby="d4mtziC2Y9iZQo37sLTFKg_Alist_lbl0"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="d4mtziC2Y9iZQo37sLTFKg_Alist_sol" id="d4mtziC2Y9iZQo37sLTFKg_Alist_sol0" value disabled aria-labelledby="d4mtziC2Y9iZQo37sLTFKg_Alist_lbl0"></div><div class="choiceList_la " id="d4mtziC2Y9iZQo37sLTFKg_Alist_lbl0"><div class="choice"><div class="label"><p>255.0.0.0</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="d4mtziC2Y9iZQo37sLTFKg_Alist_input" id="d4mtziC2Y9iZQo37sLTFKg_Alist_in1" value="1" onclick="d4mtziC2Y9iZQo37sLTFKg_Alist.setResp(this, 1);" aria-labelledby="d4mtziC2Y9iZQo37sLTFKg_Alist_lbl1"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="d4mtziC2Y9iZQo37sLTFKg_Alist_sol" id="d4mtziC2Y9iZQo37sLTFKg_Alist_sol1" value disabled aria-labelledby="d4mtziC2Y9iZQo37sLTFKg_Alist_lbl1"></div><div class="choiceList_la " id="d4mtziC2Y9iZQo37sLTFKg_Alist_lbl1"><div class="choice"><div class="label"><p>255.255.0.0</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="d4mtziC2Y9iZQo37sLTFKg_Alist_input" id="d4mtziC2Y9iZQo37sLTFKg_Alist_in2" value="2" onclick="d4mtziC2Y9iZQo37sLTFKg_Alist.setResp(this, 2);" aria-labelledby="d4mtziC2Y9iZQo37sLTFKg_Alist_lbl2"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="d4mtziC2Y9iZQo37sLTFKg_Alist_sol" id="d4mtziC2Y9iZQo37sLTFKg_Alist_sol2" value disabled aria-labelledby="d4mtziC2Y9iZQo37sLTFKg_Alist_lbl2"></div><div class="choiceList_la " id="d4mtziC2Y9iZQo37sLTFKg_Alist_lbl2"><div class="choice"><div class="label"><p>255.255.255.0</p></div></div></div></li></ul></form></div><div class="toolbar"><span class="scoreBox"><span class="score " aria-live="polite" id="d4mtziC2Y9iZQo37sLTFKg_Alist_N_score"><span id="d4mtziC2Y9iZQo37sLTFKg_Alist_SNa4"><span></span></span></span></span></div></div></div></div></div><div class="toolbar"><a title="Afficher le score et la correction" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="edCDtWkLVAeF2vGQ9ZqIyi.onActionN35(this); return false;" class="btnQuiz correction " id="edCDtWkLVAeF2vGQ9ZqIyi_S_N35"><span>Correction</span></a><a title="Effacer les r&eacute;ponses" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="edCDtWkLVAeF2vGQ9ZqIyi.onActionN57(this); return false;" class="btnQuiz reset "><span>Recommencer</span></a><span class="scoreBox"><span class="score " aria-live="polite" id="edCDtWkLVAeF2vGQ9ZqIyi_N_score"><span id="edCDtWkLVAeF2vGQ9ZqIyi_SN73"><span></span></span></span></span></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="module_La_configuration_reseau_23.html" target="_self" class="btnNav prev" title="Pr&eacute;c&eacute;dent (Les masques selon les classes)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="module_La_configuration_reseau_25.html" target="_self" class="btnNav next" title="Suivant (D&eacute;termination de l'adresse de l'h&ocirc;te)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav id="menu" class="pageSelector" role="navigation" tabindex="-1" aria-label="menu principal"><hr class="hidden"><ul class="mnu static" data-totalPages="39"><li class="sel_no anc_no type_l  dpt_0 intro"><div class="lbl type_l" id="module_La_configuration_reseau_1.html"><a href="module_La_configuration_reseau_1.html" target="_self" class="item"><span>Introduction</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_La_configuration_reseau_2.html"><a href="module_La_configuration_reseau_2.html" target="_self" class="item"><span>Configuration de votre ordinateur</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_La_configuration_reseau_3.html"><a href="module_La_configuration_reseau_3.html" target="_self" class="item"><span>L'adresse IP</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_La_configuration_reseau_4.html"><a href="module_La_configuration_reseau_4.html" target="_self" class="item" type="up"><span>Le masque r&eacute;seau</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_La_configuration_reseau_21.html"><a href="module_La_configuration_reseau_21.html" target="_self" class="item"><span>Pourquoi un masque&nbsp;?</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_La_configuration_reseau_22.html"><a href="module_La_configuration_reseau_22.html" target="_self" class="item"><span>Le masque</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_La_configuration_reseau_23.html"><a href="module_La_configuration_reseau_23.html" target="_self" class="item"><span>Les masques selon les classes</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 coQuiz"><div class="lbl type_l" id="module_La_configuration_reseau_24.html"><span class="item"><span>Exercices&nbsp;: D&eacute;termination du masque</span></span></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_La_configuration_reseau_25.html"><a href="module_La_configuration_reseau_25.html" target="_self" class="item"><span>D&eacute;termination de l'adresse de l'h&ocirc;te</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_La_configuration_reseau_26.html"><a href="module_La_configuration_reseau_26.html" target="_self" class="item"><span>D&eacute;termination de l'adresse de diffusion</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_La_configuration_reseau_27.html"><a href="module_La_configuration_reseau_27.html" target="_self" class="item"><span>Nombre de machines possibles par r&eacute;seau</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_La_configuration_reseau_28.html"><a href="module_La_configuration_reseau_28.html" target="_self" class="item"><span>Activit&eacute;&nbsp;: d&eacute;termination des param&egrave;tres</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_La_configuration_reseau_29.html"><a href="module_La_configuration_reseau_29.html" target="_self" class="item"><span>Notation CIDR</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 coQuiz"><div class="lbl type_l" id="module_La_configuration_reseau_30.html"><a href="module_La_configuration_reseau_30.html" target="_self" class="item"><span>Liste d'exercices</span></a></div></li></ul></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_La_configuration_reseau_5.html"><a href="module_La_configuration_reseau_5.html" target="_self" class="item"><span>La passerelle par d&eacute;faut</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_La_configuration_reseau_6.html"><a href="module_La_configuration_reseau_6.html" target="_self" class="item"><span>Le serveur DNS</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_La_configuration_reseau_7.html"><a href="module_La_configuration_reseau_7.html" target="_self" class="item"><span>Serveur DHCP</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="grain.html"><a href="grain.html" target="_self" class="item"><span>&Eacute;valuation</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden"><nav class="headingSelector" role="navigation"><ul class="mnu"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_La_configuration_reseau.html" target="_self" class="item" type="index" title="Page d'accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" role="contentinfo" tabindex="-1"><hr class="hidden"><a id="linkSp" target="_blank" href="https://www.scenari.org" title="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)"><span><img alt="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)" src="../skin/img/tpl/scBtn.png"></span></a></footer></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();outMgr.init();</script>
+ </body>
+</html>

@@ -1,0 +1,106 @@
+input
+{
+	margin-top: 3px;
+	/*margin-left: 101px;*/
+}
+/*input#name
+{
+	margin-left: 67px;
+}
+input#prenom
+{
+	margin-left: 33px;
+}
+input#ville
+{
+	margin-left: 45px;
+}
+input#code_postal
+{
+	width: 52px;
+	margin-left: 5px;
+}
+input#newsletter
+{
+	margin-left: 101px;
+}
+input#email
+{
+	width: 200px;
+	margin-left: 5px;
+}*/
+textarea#adresse
+{
+	margin-top: 3px;
+	/*margin-left: 11px;
+	padding-right: 4px;*/
+}
+select#civil
+{
+	width: 87px;
+}
+div#entete
+{
+  	padding: 5px;
+}
+div#entete h1 
+{
+	display: inline-block;
+	margin: 0px;
+	margin-left: 5px;
+	position: absolute;
+	top: 50px;
+}
+div#entete p 
+{
+	display: inline-block;
+	margin: 0px;
+	margin-left: 5px;
+	position: absolute;
+	top: 80px;
+}
+div#menu
+{ 
+   float: left;
+   height: 300px;
+   margin-right: 10px;
+}
+div#menu ul
+{ 
+   width: 100%;
+   padding-left: 0px;
+}
+
+div#menu li 
+{
+   padding: 5px 0px 5px 0px;
+   border: 1px solid gray;
+   list-style-type: none;
+}
+div#menu a 
+{ 
+   padding: 5px 35px 5px 5px;
+   text-decoration: none;
+}
+div#bloc
+{ 
+   float: left;
+   margin: 10px 0px 10px 0px;
+   padding: 0px 0px 0px 20px;
+   width: 80%;
+}
+div#pied
+{ 
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   display: inline-block;
+   width: 100%;
+   text-align: right;
+}
+div#contact
+{ 
+   float: left;
+   margin: 10px 0px 10px 0px;
+   padding: 0px 0px 0px 20px;
+   width: 80%;
+}

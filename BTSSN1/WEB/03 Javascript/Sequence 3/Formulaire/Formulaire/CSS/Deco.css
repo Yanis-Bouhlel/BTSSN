@@ -1,0 +1,9 @@
+body
+{
+	font-family: Courier;
+	letter-spacing: .10em;
+}
+input
+{
+	border: 1px solid grey;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Exercice 3&nbsp;: On souhaite r&eacute;cup&eacute;rer une adresse IP entr&eacute; par un utilisateur. [Module Programmation 4 ( Tableau et cha&icirc;nes de caract&egrave;res )]</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.103 / Opale 3.6.100">
+  <meta name="revision" content="2020-10-27 14:13">
+  <link rel="start" href="module_grain.html" title="Module Programmation 4 ( Tableau et cha&icirc;nes de caract&egrave;res )">
+  <meta name="author" content>
+  <meta name="keywords" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"kgs1vgws"};
+/*1*/ window.scLoadParams = {destUri:"/co/grain_14.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_searchMgr/searchMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_outMgr/outMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/JavaScript">
+outMgr.declareOutline("module_grain.txt");
+	</script> </head>
+ <body class="default module expUc">
+  <div id="root"><header id="header" role="banner"><h1><span>Module Programmation 4 ( Tableau et cha&icirc;nes de caract&egrave;res )</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article expUc"><h2 class="hBk_ti"><span>Exercice 3&nbsp;: On souhaite r&eacute;cup&eacute;rer une adresse IP entr&eacute; par un utilisateur.</span></h2><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Une solution est de lire la cha&icirc;ne de caract&egrave;res compl&egrave;te puis de l'analyser caract&egrave;re apr&egrave;s caract&egrave;re.</p><p>Dans ce cas toute erreur de l'utilisateur sera effectivement d&eacute;tect&eacute;e et aucune ex&eacute;cution incorrecte ne sera possible.</p><p>Le programme testera chaque caract&egrave;re afin de trouver les s&eacute;parateurs &eacute;ventuels (caract&egrave;re autre qu'un chiffre) puis transformera le texte pr&eacute;c&eacute;dent ce s&eacute;parateur en nombre entier.</p><p>Pour r&eacute;aliser ce programme, vous pourrez utiliser les fonctions suivantes :</p><p>#include &lt;cstring&gt;</p><p><strong class="txt_emp_is ">cin.getline</strong> permet de lire une ligne entr&eacute;e au clavier jusqu'&agrave; un maximum de n caract&egrave;res (2nd argument) et la met dans une cha&icirc;ne de caract&egrave;res (1er argument).</p><ul class="txt_il "><li class="txt_ili "><p>Exemple : char chaine [10]; cin.getline (chaine, 10);</p></li></ul><p><strong class="txt_emp_is ">strncpy</strong> copie les n (3&egrave;me argument) premiers octets de la cha&icirc;ne src (2eme argument) (y compris le caract&egrave;re `\0' final) dans la cha&icirc;ne dest (1er argument).</p><ul class="txt_il "><li class="txt_ili "><p>Exemple : strncpy (dest, src+2, 4); si src contient : &quot;abcdefghij&quot;, alors dest contient : &quot;cdef&quot;</p></li></ul><p>#include &lt;cstdlib&gt;</p><p><strong class="txt_emp_is ">atoi</strong> retourne un entier correspondant &agrave; la cha&icirc;ne de caract&egrave;res pass&eacute; en argument.</p><ul class="txt_il "><li class="txt_ili "><p>Exemple : char chaine [10] = &quot;123&quot;; int entier; entier = atoi (chaine); // entier contient la valeur enti&egrave;re 123</p></li></ul><p><strong class="txt_emp_is ">strlen</strong> retourne la longueur de la cha&icirc;ne de caract&egrave;res pass&eacute; en argument.</p><ul class="txt_il "><li class="txt_ili "><p>Exemple : char chaine [10] = &quot;123456&quot;; int longueur; longueur = strlen (chaine); // donne 6</p></li></ul></div><div class="rBk "><p><strong class="txt_emp_is ">&Eacute;tape 1</strong></p><p><strong class="txt_emp_is ">Entr&eacute;e de l'adresse IP&nbsp;:</strong></p><p>&Eacute;crire un programme demandant l'adresse IP sous la forme xxx.xxx.xxx.xxx, la stocker dans une cha&icirc;ne de 30 caract&egrave;res et rechercher le premier caract&egrave;re de cette cha&icirc;ne qui n'est pas un chiffre (recherche du premier s&eacute;parateur).</p><p>Indice&nbsp;: utiliser la table du code ascii.</p></div><div class="rBk "><p><strong class="txt_emp_is ">&Eacute;tape 2</strong></p><p><strong class="txt_emp_is ">V&eacute;rification des diff&eacute;rents champs</strong></p><p>Modifier le programme pour contr&ocirc;ler que l'adresse IP est correcte.</p><ul class="txt_il "><li class="txt_ili "><p><strong class="txt_emp_is ">Recherche des s&eacute;parateurs et conversion de l'adresse&nbsp;:</strong></p><ul class="txt_il "><li class="txt_ili "><p>Modifier le programme pour qu'il recherche la position des 3 s&eacute;parateurs ( indice nous pourrons utiliser un tableau sep de 3 entier pour stocker les 3 positions )</p></li><li class="txt_ili "><p>Copie successivement les 4 parties (de 0 au 1er s&eacute;parateur, du 1er s&eacute;parateur au 2nd s&eacute;parateur, du 2nd s&eacute;parateur au 3&egrave;me et du 3&egrave;me au dernier octet de la cha&icirc;ne dans des chaines octet1, octet2 etc...) et les convertir en entier &agrave; l'aide de la fonction <strong class="txt_emp_is ">atoi</strong> puis nous afficherons les entiers obtenus.</p><p>Ex&nbsp;: pour 123.240.230.254 copier &quot;123&quot; dans une chaine octet1, &quot;240&quot; dans une chaine octet2, &quot;230&quot; dans une chaine octet3, &quot;254&quot; dans une chaine octet4 puis convertir ces cha&icirc;nes en entier puis les afficher.</p></li></ul></li><li class="txt_ili "><p><strong class="txt_emp_is ">Contr&ocirc;le de tous les caract&egrave;res et conversion de l'adresse&nbsp;( test de la robustesse du programme ):</strong></p><p>Modifier le programme pour qu'il affiche les 4 parties de l'adresse IP et v&eacute;rifie qu'aucune erreur n'a &eacute;t&eacute; commise par l'utilisateur, c'est-&agrave;-dire :</p><p>&bull; les s&eacute;parateurs sont bien des points ;</p><p>&bull; les nombres entre les s&eacute;parateurs sont compris entre 0 et 255 ;</p><p>&bull; il n'y a pas d'autre caract&egrave;re apr&egrave;s le dernier nombre.</p></li></ul><p>L'adresse IP sera lue dans une cha&icirc;ne de caract&egrave;res puis analys&eacute;e par le programme.</p><ul class="txt_il "><li class="txt_ili "><p><strong class="txt_emp_is ">Proposer des options possibles&nbsp;</strong>: indiquer la classe de l'adresse ou donner le masque correspondant etc...</p></li></ul></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="grain_13.html" target="_self" class="btnNav prev" title="Pr&eacute;c&eacute;dent (Exercice 2&nbsp;: Nombre de mots dans une phrase)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><span class="btnNav next"><span>Fin</span></span></li></ul></nav></div></div><div id="toolbox"><nav id="menu" class="pageSelector" role="navigation" tabindex="-1" aria-label="menu principal"><hr class="hidden"><ul class="mnu static" data-totalPages="7"><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_grain_1.html"><a href="module_grain_1.html" target="_self" class="item"><span>Objectifs</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_grain_2.html"><a href="module_grain_2.html" target="_self" class="item"><span>S&eacute;quence 1&nbsp;: Utilisation des tableaux</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_grain_3.html"><a href="module_grain_3.html" target="_self" class="item" type="up"><span>S&eacute;quence 2&nbsp;: Application aux cha&icirc;nes de caract&egrave;res</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="grain_13.html"><a href="grain_13.html" target="_self" class="item"><span>Exercice 2&nbsp;: Nombre de mots dans une phrase</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="grain_14.html"><span class="item"><span>Exercice 3&nbsp;: On souhaite r&eacute;cup&eacute;rer une adresse IP entr&eacute; par un utilisateur.</span></span></div></li></ul></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden"><nav class="headingSelector" role="navigation"><ul class="mnu"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_grain.html" target="_self" class="item" type="index" title="Page d'accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" role="contentinfo" tabindex="-1"><hr class="hidden"><a id="linkSp" target="_blank" href="https://www.scenari.org" title="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)"><span><img alt="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)" src="../skin/img/tpl/scBtn.png"></span></a></footer></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();outMgr.init();</script>
+ </body>
+</html>
