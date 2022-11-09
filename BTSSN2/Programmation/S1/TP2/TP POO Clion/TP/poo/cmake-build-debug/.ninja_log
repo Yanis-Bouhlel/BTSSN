@@ -1,0 +1,25 @@
+# ninja log v5
+4	264	6896843770577740	CMakeFiles/poo.dir/main.cpp.obj	ba4bc5bbc8d6e25e
+8	299	6896907247929602	CMakeFiles/poo.dir/class/Commande.cpp.obj	19bff1bf7238697c
+5	299	6896907247929602	CMakeFiles/poo.dir/class/Client.cpp.obj	763837cb575e90be
+11	300	6896907247949544	CMakeFiles/poo.dir/class/Ligne.cpp.obj	1e9c5330dabe9128
+14	301	6896907247949544	CMakeFiles/poo.dir/class/Article.cpp.obj	eff3293673333f8
+2	301	6896907247959507	CMakeFiles/poo.dir/main.cpp.obj	ba4bc5bbc8d6e25e
+302	489	6896907249806350	poo.exe	eeb661a7545f8205
+2	254	6896907505270491	CMakeFiles/poo.dir/class/Ligne.cpp.obj	1e9c5330dabe9128
+254	341	6896907506106402	poo.exe	eeb661a7545f8205
+5	252	6896909195535108	CMakeFiles/poo.dir/class/Ligne.cpp.obj	1e9c5330dabe9128
+2	255	6896909195565034	CMakeFiles/poo.dir/main.cpp.obj	ba4bc5bbc8d6e25e
+256	331	6896909196303049	poo.exe	eeb661a7545f8205
+2	252	6896909315584591	CMakeFiles/poo.dir/main.cpp.obj	ba4bc5bbc8d6e25e
+252	328	6896909316312641	poo.exe	eeb661a7545f8205
+4	275	6896912092455566	CMakeFiles/poo.dir/class/Ligne.cpp.obj	1e9c5330dabe9128
+2	279	6896912092485501	CMakeFiles/poo.dir/main.cpp.obj	ba4bc5bbc8d6e25e
+7	284	6896912092535373	CMakeFiles/poo.dir/class/Article.cpp.obj	eff3293673333f8
+284	398	6896912093662404	poo.exe	eeb661a7545f8205
+5	252	6896912420364695	CMakeFiles/poo.dir/class/Ligne.cpp.obj	1e9c5330dabe9128
+2	265	6896912420504319	CMakeFiles/poo.dir/class/Article.cpp.obj	eff3293673333f8
+265	341	6896912421232362	poo.exe	eeb661a7545f8205
+2	255	6896912555170389	CMakeFiles/poo.dir/class/Ligne.cpp.obj	1e9c5330dabe9128
+5	282	6896912555449627	CMakeFiles/poo.dir/class/Article.cpp.obj	eff3293673333f8
+283	381	6896912556387200	poo.exe	eeb661a7545f8205
