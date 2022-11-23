@@ -50,7 +50,7 @@ void Tri::TriInsert(int *tab, int size) {
     }
 }
 
-void Tri::Affichage(int *tab, int size) {
+void Tri::affichage(int *tab, int size) {
     for (int i = 0; i < size; ++i) {
         cout << tab[i] << "\t" ;
     }

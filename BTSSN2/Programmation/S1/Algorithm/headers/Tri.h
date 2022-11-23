@@ -17,7 +17,7 @@ public :
     int Size(int size) ;
     void TriSelect(int tab[], int size);
     void TriInsert(int tab[], int size);
-    void Affichage(int tab[], int size);
+    void affichage(int tab[], int size);
 };
 
 
