@@ -9,12 +9,14 @@
 class Tri {
 private :
     int size ;
-    int save ;
-    int min ;
+    int save, min ;
+    int x, j ;
+    int pivot, inf, sup ;
 public :
     Tri() ;
     int Size(int size) ;
     void TriSelect(int tab[], int size);
+    void TriInsert(int tab[], int size);
     void Affichage(int tab[], int size);
 };
 

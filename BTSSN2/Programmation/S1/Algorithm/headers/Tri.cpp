@@ -36,6 +36,19 @@ void Tri::TriSelect(int *tab, int size) {
     }
 
 }
+void Tri::TriInsert(int *tab, int size) {
+    Size(size);
+    for (int i = 1; i < this->size - 1; ++i) {
+        this->x = tab[i] ;
+        this->j = i ;
+        while(j > 0 && tab[this->j] > x)
+        {
+            tab[this->j - 1] = tab[this->j];
+            this->j-- ;
+        }
+        tab[this->j] = x ;
+    }
+}
 
 void Tri::Affichage(int *tab, int size) {
     for (int i = 0; i < size; ++i) {
