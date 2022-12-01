@@ -1,0 +1,119 @@
+.btn {
+  width: 50px;
+  height: 35px;
+  margin-left: 5px;
+}
+
+#Chauf {
+}
+
+#ChaufOn {
+}
+
+.sidebar.sidebar-dark.accordion.bg-gradient-primary {
+  background: rgb(52,58,64);
+}
+
+.btn {
+  background: rgb(52,58,64);
+  border-color: rgb(52,58,64);
+}
+
+#Report {
+  width: auto;
+  height: auto;
+}
+
+#ValTemp {
+  margin-top: 25px;
+  margin-right: 10px;
+}
+
+.border-start-success {
+  height: 107px;
+}
+
+.no-gutters {
+  margin-top: -5px;
+}
+
+#labelTemperature {
+  color: #e5053a;
+}
+
+.border-start-primary {
+  height: 107px;
+}
+
+#hSecu {
+  margin-left: 20px;
+}
+
+#Security {
+  margin-top: 20px;
+}
+
+#ConfortRow {
+  margin-top: 20px;
+}
+
+#Comfort {
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+#PorteOpen {
+  width: 70px;
+}
+
+#ChaufOff-1 {
+}
+
+#PorteClose {
+  width: 70px;
+}
+
+#ShowCam {
+  width: 80px;
+  height: 35px;
+  margin-top: 2px;
+  margin-left: 0px;
+}
+
+#OpenPortail {
+  width: 50px;
+  height: 35px;
+  margin-left: 0px;
+  font-weight: bold;
+}
+
+#ClosePortail {
+  width: 50px;
+  height: 35px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.btnClose {
+}
+
+@media screen and (max-width: 807px) {
+  .btn {
+    margin-top: 5px;
+    width: 50px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 807px) {
+  .card {
+    height: 125px;
+  }
+}
+
+.bg-gradient-primary {
+  background-color: rgb(52,58,64);
+  background-image: linear-gradient(180deg, rgb(52,58,64)10%, #525864 100%);
+  background-size: cover;
+}
+
